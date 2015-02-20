@@ -1,22 +1,6 @@
-## My personal GruntFile for front-end experiments.
+## To do list
 
-### Instructions:
-
-#### clone the repo:
-```
-git clone https://github.com/anthdeldev/GruntFile
-```
-
-#### Install dependencies
-```
-cd GruntFile
-npm install
-```
-
-#### Run grunt
-```
-grunt
-```
-
-#### A local server will auto open in your default browser
-
+- Add GA / DONE
+- Add websmaster tools.
+- Add navbar and section
+- Add sections and with the aferent content.
