@@ -25,7 +25,16 @@ body {
     webkit-tap-highlight-color: fade(@light, 20%);
     -webkit-font-smoothing: antialiased;
 }
-
+strong { font-weight: normal; }
+em { font-style: normal; }
+a {
+    &:hover {
+        text-decoration: none;
+        opacity: .8;
+    }
+    .transition(all .2s ease-in-out);
+    text-decoration: underline;
+}
 html {
     width: 100%;
     height: 100%;
@@ -37,83 +46,42 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    font-family: 'simplon_bp_regularregular';
+    // margin: 0 0 35px;
+    // font-weight: 700;
+    // letter-spacing: 1px;
+    // font-family: 'simplon_bp_regularregular';
 }
 
 p, ul {
     margin: 0 0 25px;
-    font-size: 18px;
-    line-height: 1.5;
+    // font-size: 18px;
+    // line-height: 1.5;
 }
 
-@media(min-width:767px) {
-    p {
-        margin: 0 0 35px;
-        font-size: 20px;
-        line-height: 1.6;
-    }
-}
+// @media(min-width:767px) {
+//     p {
+//         margin: 0 0 35px;
+//         font-size: 20px;
+//         line-height: 1.6;
+//     }
+// }
 
-a {
-    color: @primary;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    &:hover,
-    &:focus {
-        text-decoration: none;
-        color: darken(@primary,20%);
-    }
-}
+// a {
+//     color: @primary;
+//     -webkit-transition: all .2s ease-in-out;
+//     -moz-transition: all .2s ease-in-out;
+//     transition: all .2s ease-in-out;
 
-.nothing {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    
-    p {
-        padding: 1em;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        max-width: 490px;
-        padding-top: 20%;
-        text-align: center;
-        vertical-align: middle;    
-    }
+//     &:hover,
+//     &:focus {
+//         text-decoration: none;
+//         color: darken(@primary,20%);
+//     }
+// }
 
-}
-
-// site mofo.
-::-moz-selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: fade(@green, 20%);
-}
-
-::selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: fade(@green, 20%);
-}
-
-img::selection {
-    background: transparent;
-}
-
-img::-moz-selection {
-    background: transparent;
-}
 
 
 // --------------------------
-
 
 
 .navbar-custom {
@@ -223,78 +191,95 @@ img::-moz-selection {
     }
 }
 
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid @light;
-    border-radius: 35px;
-    font-size: 40px;
+// .btn-circle {
+//     width: 70px;
+//     height: 70px;
+//     margin-top: 15px;
+//     padding: 7px 16px;
+//     border: 2px solid @light;
+//     border-radius: 35px;
+//     font-size: 40px;
+//     color: @light;
+//     background: transparent;
+//     -webkit-transition: background .3s ease-in-out;
+//     -moz-transition: background .3s ease-in-out;
+//     transition: background .3s ease-in-out;
+//     &:hover,
+//     &:focus {
+//         outline: none;
+//         color: @light;
+//         background: fade(@light, 10%);
+//     }
+//     i.animated {
+//         -webkit-transition-property: -webkit-transform;
+//         -webkit-transition-duration: 1s;
+//         -moz-transition-property: -moz-transform;
+//         -moz-transition-duration: 1s;
+//     }
+//     &:hover {
+//         i.animated {
+//             -webkit-animation-name: pulse;
+//             -moz-animation-name: pulse;
+//             -webkit-animation-duration: 1.5s;
+//             -moz-animation-duration: 1.5s;
+//             -webkit-animation-iteration-count: infinite;
+//             -moz-animation-iteration-count: infinite;
+//             -webkit-animation-timing-function: linear;
+//             -moz-animation-timing-function: linear;
+//         }
+//     }
+// }
+
+
+// Hacking the program n stuff.
+@skyblue: #43e0ff;
+@pale: #ffe3a6;
+@legree: #4fffac;
+@pink: #ffaeaa;
+
+#program {
+    #gradient>.vertical(@skyblue, @pale);
+    // outline: 3px dotted blue;
+    // * {outline: 1px dotted red;}
+}
+
+.event {
+    background: black;
+    padding: 19px 0;
+    margin-bottom: 2px;
+}
+
+.day {
+    > h3 { font-size: 3em; }
+}
+strong.time {
+    font-size: 2em;
     color: @light;
-    background: transparent;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-    &:hover,
-    &:focus {
-        outline: none;
-        color: @light;
-        background: fade(@light, 10%);
-    }
-    i.animated {
-        -webkit-transition-property: -webkit-transform;
-        -webkit-transition-duration: 1s;
-        -moz-transition-property: -moz-transform;
-        -moz-transition-duration: 1s;
-    }
-    &:hover {
-        i.animated {
-            -webkit-animation-name: pulse;
-            -moz-animation-name: pulse;
-            -webkit-animation-duration: 1.5s;
-            -moz-animation-duration: 1.5s;
-            -webkit-animation-iteration-count: infinite;
-            -moz-animation-iteration-count: infinite;
-            -webkit-animation-timing-function: linear;
-            -moz-animation-timing-function: linear;
-        }
-    }
+}
+h4.name {
+    font-size: 1.6em;
+    margin: 0px;
+    padding: 0px;
+    color: @pink;
 }
 
-@-webkit-keyframes pulse {    
-    0 {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+p.desc {
+    &, a { color: @pale; }
+    margin:0;
+}
+.location {
+    color: @light;
 }
 
-@-moz-keyframes pulse {    
-    0 {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
 
-    50% {
-        -moz-transform: scale(1.2);
-        transform: scale(1.2);
-    }
 
-    100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-}
+
+
+
+
+
+
+
 
 .content-section {
     padding-top: 100px;
@@ -385,16 +370,18 @@ footer {
     }
 }
 
+
+// Le Select magic
 ::-moz-selection {
     text-shadow: none;
     background: #fcfcfc;
-    background: fade(@light, 20%);
+    background: fade(@green, 20%);
 }
 
 ::selection {
     text-shadow: none;
     background: #fcfcfc;
-    background: fade(@light, 20%);
+    background: fade(@green, 20%);
 }
 
 img::selection {
@@ -403,11 +390,5 @@ img::selection {
 
 img::-moz-selection {
     background: transparent;
-}
+} 
 
-body {
-    webkit-tap-highlight-color: fade(@light, 20%);
-}
-
-
-// Le fonts 
