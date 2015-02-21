@@ -2518,81 +2518,29 @@ body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
   -webkit-font-smoothing: antialiased;
 }
+strong {
+  font-weight: normal;
+}
+em {
+  font-style: normal;
+}
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+  opacity: .8;
+}
 html {
   width: 100%;
   height: 100%;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 35px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-family: 'simplon_bp_regularregular';
-}
 p,
 ul {
   margin: 0 0 25px;
-  font-size: 18px;
-  line-height: 1.5;
-}
-@media (min-width: 767px) {
-  p {
-    margin: 0 0 35px;
-    font-size: 20px;
-    line-height: 1.6;
-  }
-}
-a {
-  color: #5480ff;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-     transition: all 0.2s ease-in-out;
-}
-a:hover,
-a:focus {
-  text-decoration: none;
-  color: #003ded;
-}
-.nothing {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-}
-.nothing p {
-  padding: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  max-width: 490px;
-  padding-top: 20%;
-  text-align: center;
-  vertical-align: middle;
-}
-::-moz-selection {
-  text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(70, 191, 167, 0.2);
-}
-::selection {
-  text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(70, 191, 167, 0.2);
-}
-img::-moz-selection {
-  background: transparent;
-}
-img::selection {
-  background: transparent;
-}
-img::-moz-selection {
-  background: transparent;
 }
 .navbar-custom {
   margin-bottom: 0;
@@ -2686,54 +2634,41 @@ img::-moz-selection {
     font-size: 25px;
   }
 }
-.btn-circle {
-  width: 70px;
-  height: 70px;
-  margin-top: 15px;
-  padding: 7px 16px;
-  border: 2px solid #ffffff;
-  border-radius: 35px;
-  font-size: 40px;
+#program {
+  background-image: -webkit-linear-gradient(top, #43e0ff 0%, #ffe3a6 100%);
+  background-image: -o-linear-gradient(top, #43e0ff 0%, #ffe3a6 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#43e0ff), to(#ffe3a6));
+  background-image: linear-gradient(to bottom, #43e0ff 0%, #ffe3a6 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff43e0ff', endColorstr='#ffffe3a6', GradientType=0);
+}
+.event {
+  background: black;
+  padding: 19px 0;
+  margin-bottom: 2px;
+}
+.day > h3 {
+  font-size: 3em;
+}
+strong.time {
+  font-size: 2em;
   color: #ffffff;
-  background: transparent;
-  -webkit-transition: background 0.3s ease-in-out;
-  -o-transition: background 0.3s ease-in-out;
-     transition: background 0.3s ease-in-out;
 }
-.btn-circle:hover,
-.btn-circle:focus {
-  outline: none;
+h4.name {
+  font-size: 1.6em;
+  margin: 0px;
+  padding: 0px;
+  color: #ffaeaa;
+}
+p.desc {
+  margin: 0;
+}
+p.desc,
+p.desc a {
+  color: #ffe3a6;
+}
+.location {
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.1);
-}
-.btn-circle i.animated {
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-}
-.btn-circle:hover i.animated {
-  -webkit-animation-name: pulse;
-  -moz-animation-name: pulse;
-  -webkit-animation-duration: 1.5s;
-  -moz-animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-}
-@-webkit-keyframes pulse {
-  0 {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
 }
 .content-section {
   padding-top: 100px;
@@ -2812,12 +2747,12 @@ footer p {
 ::-moz-selection {
   text-shadow: none;
   background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(70, 191, 167, 0.2);
 }
 ::selection {
   text-shadow: none;
   background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(70, 191, 167, 0.2);
 }
 img::-moz-selection {
   background: transparent;
@@ -2827,7 +2762,4 @@ img::selection {
 }
 img::-moz-selection {
   background: transparent;
-}
-body {
-  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
