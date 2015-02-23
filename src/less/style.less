@@ -135,10 +135,11 @@ p, ul {
 }
 // this is the burger here.
 .navbar-toggle {
-    background: @pink;
+    background: black;
     &::before {
+        color: white;
         content:'☉';
-        font-size: 1.6em;
+        font-size: 1.9em;
         vertical-align: middle;
         line-height: 0em;
     }
@@ -147,7 +148,9 @@ p, ul {
 
 // Le intro section.
 .intro {
-    margin-top: 90px;
+    @media screen and (min-width:@screen-sm) {
+        margin-top: 90px;
+    }
     padding: 100px 0;
     background: url(../images/header_pat.png) repeat-x top left;
 }
