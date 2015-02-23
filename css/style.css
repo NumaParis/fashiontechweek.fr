@@ -2606,18 +2606,23 @@ ul {
   }
 }
 .navbar-toggle {
-  background: #ffaeaa;
+  background: black;
 }
 .navbar-toggle::before {
+  color: white;
   content: '☉';
-  font-size: 1.6em;
+  font-size: 1.9em;
   vertical-align: middle;
   line-height: 0em;
 }
 .intro {
-  margin-top: 90px;
   padding: 100px 0;
   background: url(../images/header_pat.png) repeat-x top left;
+}
+@media screen and (min-width: 768px) {
+  .intro {
+    margin-top: 90px;
+  }
 }
 .text-intro {
   font-size: 1.4em;
