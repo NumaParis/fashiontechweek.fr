@@ -2672,12 +2672,14 @@ h4.name {
   padding: 0px;
   color: #ffaeaa;
 }
-p.desc {
-  margin: 0;
-}
 p.desc,
 p.desc a {
   color: #ffe3a6;
+}
+@media screen and (min-width: 768px) {
+  p.desc {
+    margin: 0;
+  }
 }
 .location {
   color: #ffffff;
