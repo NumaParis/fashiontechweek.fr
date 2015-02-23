@@ -58,42 +58,21 @@ p, ul {
     // line-height: 1.5;
 }
 
-// @media(min-width:767px) {
-//     p {
-//         margin: 0 0 35px;
-//         font-size: 20px;
-//         line-height: 1.6;
-//     }
-// }
-
-// a {
-//     color: @primary;
-//     -webkit-transition: all .2s ease-in-out;
-//     -moz-transition: all .2s ease-in-out;
-//     transition: all .2s ease-in-out;
-
-//     &:hover,
-//     &:focus {
-//         text-decoration: none;
-//         color: darken(@primary,20%);
-//     }
-// }
-
-
 
 // --------------------------
 
+.testcls {
+    outline: 2px solid red;
+}
 
 .navbar-custom {
+    
     margin-bottom: 0;
     border-bottom: 1px solid fade(@light, 30%);
     text-transform: uppercase;
-    background-color: @dark;
+    background-color: @light;
     .navbar-brand {
-        font-weight: 700;
-        &:focus {
-            outline: none;
-        }
+        padding: 5px 0px 0px 0px;
         .navbar-toggle {
             padding: 4px 6px;
             font-size: 16px;
@@ -105,13 +84,13 @@ p, ul {
         }
     }
     a {
-        color: @light;
+        color: @dark;
     }
     .nav {
         li {
             &.active {
-                outline: nonte;
-                background-color: fade(@light, 30%);
+                outline: none;
+                // background-color: fade(@light, 30%);
             }
             a {
                 -webkit-transition: background .3s ease-in-out;
@@ -133,7 +112,7 @@ p, ul {
         padding: 20px 0;
         border-bottom: none;
         letter-spacing: 1px;
-        background: transparent;
+        background: white;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -141,101 +120,64 @@ p, ul {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: @dark;
+        background-color: @light;
     }
 
     .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid fade(@light, 30%);
+        padding: 10px 0;
+        // border-bottom: 1px solid fade(@light, 30%);
     }
 }
-
-.intro {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: @light;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: @dark;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    .intro-body {
-        display: table-cell;
+// this is the burger here.
+.navbar-toggle {
+    background: @pink;
+    &::before {
+        content:'☉';
+        font-size: 1.6em;
         vertical-align: middle;
-        .brand-heading {
-            font-size: 40px;
-        }
-
-        .intro-text {
-            font-size: 18px;
-        }
+        line-height: 0em;
     }
 }
 
-@media(min-width:767px) {
-    .intro {
-        height: 100%;
-        padding: 0;
-        .intro-body {
-            .brand-heading {
-                font-size: 100px;
-            }
 
-            .intro-text {
-                font-size: 25px;
-            }
-        }
-    }
+// Le intro section.
+.intro {
+    margin-top: 90px;
+    padding: 100px 0;
+    background: url(../images/header_pat.png) repeat-x top left;
 }
 
-// .btn-circle {
-//     width: 70px;
-//     height: 70px;
-//     margin-top: 15px;
-//     padding: 7px 16px;
-//     border: 2px solid @light;
-//     border-radius: 35px;
-//     font-size: 40px;
-//     color: @light;
-//     background: transparent;
-//     -webkit-transition: background .3s ease-in-out;
-//     -moz-transition: background .3s ease-in-out;
-//     transition: background .3s ease-in-out;
-//     &:hover,
-//     &:focus {
-//         outline: none;
-//         color: @light;
-//         background: fade(@light, 10%);
-//     }
-//     i.animated {
-//         -webkit-transition-property: -webkit-transform;
-//         -webkit-transition-duration: 1s;
-//         -moz-transition-property: -moz-transform;
-//         -moz-transition-duration: 1s;
-//     }
-//     &:hover {
-//         i.animated {
-//             -webkit-animation-name: pulse;
-//             -moz-animation-name: pulse;
-//             -webkit-animation-duration: 1.5s;
-//             -moz-animation-duration: 1.5s;
-//             -webkit-animation-iteration-count: infinite;
-//             -moz-animation-iteration-count: infinite;
-//             -webkit-animation-timing-function: linear;
-//             -moz-animation-timing-function: linear;
-//         }
-//     }
-// }
+.text-intro {
+    font-size: 1.4em;
+}
+
+.ftw {
+    width: 90%;
+    max-width: 600px;
+}
+
+.introbox {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    background: black;
+    // height: 250px;
+    padding: @grid-gutter-width;
+    // padding-right: @grid-gutter-width;
+    
+}
+.btn.inscript {
+    background: white;
+    color: #000;
+    font-size: 2em;
+    padding: 10px 20px;
+    display: inline-block;
+    // margin-top: 300px;
+}
+
 
 
 // Hacking the program n stuff.
-@skyblue: #43e0ff;
-@pale: #ffe3a6;
-@legree: #4fffac;
-@pink: #ffaeaa;
 
 #program {
     #gradient>.vertical(@skyblue, @pale);
@@ -273,16 +215,87 @@ p.desc {
 
 
 
+.coorg {
+    .col {
+        padding: 0px @grid-gutter-width/2 0px @grid-gutter-width/2;
+        float: left;
+        width: 100%;
+        @media screen and (min-width: @screen-xs) { width: 100%/2; }
+        @media screen and (min-width: @screen-sm) { width: 100%/3; }
+        @media screen and (min-width: @screen-md) { width: 100%/5; }
+    }
+    .img {
+        padding: @grid-gutter-width;
+        margin-bottom: 19px;
+        background: fade(@gray, 3%);
+        border: 1px dashed fade(@gray, 10%);
+    }
+    img {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        &.numa    { max-width: 190px; }
+        &.escp    { max-width: 190px; }
+        &.hallc   { max-width: 160px; }
+        &.iconity { max-width: 160px; }
+    }
+}
 
 
 
+ul.partners {
+    display: block;
+    padding: 20px 0;
+
+    li {
+        display: inline-block;
+        width: 200px;
+        list-style-type: none;
+        margin: 1.3em;
+        img {
+            // .transition(250ms);
+            .desaturate;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            cursor: pointer;
+            // &.IlleDeFrance   {width:160px;}
+            // &.google         {width:100px;}
+            // &.bnp            {width: 160px;}
+            // &.sncf           {width: 100px;}
+            // &.orange         {width: 90px;}
+            // &.atelier        {width: 160px;}
+            // &.atalanta       {width: 160px;}
+            
+            // the new ones.
+            &.elle           {width: 110px;}
+            &.maddyness      {width: 170px;}
+            &.frenchweb      {width: 80px;}
+            &.ubergizmo      {width: 190px;}
+            &.latelierfr     {width: 170px;}
+            &.gaite          {width: 100px;}
+            &.lapaillasse    {width: 120px;}
+            &.lafonderie     {width: 120px;}
+            &.cnd            {width: 110px;}
+            &.smc            {width: 70px;}
+        }
+        &:hover img {
+        .saturate;
+        }
+    }
+}
 
 
 
-
-
-.content-section {
-    padding-top: 100px;
+// Content blocks n stuff
+.container {
+    > h2 {
+        font-size: 4em;
+    }
+}
+section {
+    padding: 60px 0;
 }
 
 .download-section {
@@ -317,10 +330,11 @@ p.desc {
         margin-top: 250px;
     }
 }
+// location 
 
 .btn {
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    // font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -391,4 +405,167 @@ img::selection {
 img::-moz-selection {
     background: transparent;
 } 
+
+
+// Map at the bottom - is nasty.
+#google-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #e7eaf0;
+}
+@media only screen and (min-width: 768px) {
+  #google-container {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  #google-container {
+    height: 600px;
+  }
+}
+
+#cd-google-map {
+  position: relative;
+}
+#cd-google-map address {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 1em 1em;
+  background-color: rgba(211, 104, 104, 0.9);
+  color: white;
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+@media only screen and (min-width: 768px) {
+  #cd-google-map address {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    text-align: center;
+  }
+}
+
+.sqb {
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    // text-transform: uppercase;
+    padding: 5px 10px;
+    margin-left: 10px;
+    margin-bottom: 1px;
+}
+
+#cd-zoom-in, #cd-zoom-out {
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+    background-size: 32px 64px;
+    background-image: url("../images/cd-icon-controller.svg");
+}
+#loc1.sqb {
+    margin-top: 10px;
+}
+#loc1, #loc2, #loc3, #loc4, #loc5 {
+    background-image: none;
+    &:hover { background: yellow; color: #000; }
+}
+
+.no-touch #cd-zoom-in:hover, .no-touch #cd-zoom-out:hover {
+  background-color: #d36868;
+}
+@media only screen and (min-width: 768px) {
+  #cd-zoom-in, #cd-zoom-out {
+    // margin-left: 50px;
+  }
+}
+
+#cd-zoom-in {
+  background-position: 50% 0;
+  margin-top: 10px;
+  
+}
+@media only screen and (min-width: 768px) {
+  #cd-zoom-in {
+    // margin-top: 50px;
+  }
+}
+
+#cd-zoom-out { background-position: 50% -32px; }
+
+// Google maps container SASS code figure it out later.
+
+// #google-container {
+//     position: relative;
+//     width: 100%;
+//     height: 200px;
+//     background-color: $background;
+
+//     @include MQ(M) {
+//         height: 300px;
+//     }
+
+//     @include MQ(L) {
+//         height: 600px;
+//     }
+// }
+
+// #cd-google-map {
+//     position: relative;
+
+//     address {
+//         position: absolute;
+//         width: 100%;
+//         bottom: 0;
+//         left: 0;
+//         padding: 1em 1em;
+//         background-color: rgba($color-2, .9);
+//         color: $color-3;
+//         @include font-size(13px);
+
+//         @include MQ(M) {
+//             @include font-size(15px);
+//             text-align: center;
+//         }
+//     }
+// }
+
+// #cd-zoom-in, #cd-zoom-out {
+//     height: 32px;
+//     width: 32px;
+//     cursor: pointer;
+//     margin-left: 10px;
+//     background-color: rgba($color-2, .9);
+//     background-repeat: no-repeat;
+//     background-size: 32px 64px;
+//     background-image: url('../img/cd-icon-controller.svg');
+
+//     .no-touch &:hover {
+//         background-color: rgba($color-2, 1);
+//     }
+
+//     @include MQ(M) {
+//         margin-left: 50px;
+//     }
+// }
+
+// #cd-zoom-in {
+//     background-position: 50% 0;
+//     margin-top: 10px;
+//     margin-bottom: 1px;
+
+//     @include MQ(M) {
+//         margin-top: 50px;
+//     }
+// }
+
+// #cd-zoom-out {
+//     background-position: 50% -32px;
+// }
+
+
+
+
 
