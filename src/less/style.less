@@ -71,8 +71,13 @@ p, ul {
     border-bottom: 1px solid fade(@light, 30%);
     text-transform: uppercase;
     background-color: @light;
-    .navbar-brand {
+    .navbar-brand {        
         padding: 5px 0px 0px 0px;
+        @media screen and (max-width:@screen-xs) {
+            position: relative;
+            overflow: hidden;
+            width: 50px;
+        }
         .navbar-toggle {
             padding: 4px 6px;
             font-size: 16px;
@@ -158,21 +163,22 @@ p, ul {
 
 .introbox {
     display: table-cell;
-    text-align: center;
+    // text-align: center;
     vertical-align: middle;
     background: black;
     // height: 250px;
     padding: @grid-gutter-width;
     // padding-right: @grid-gutter-width;
+    color: @light;
     
 }
 .btn.inscript {
     background: white;
     color: #000;
-    font-size: 2em;
-    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
     display: inline-block;
-    // margin-top: 300px;
+    margin-bottom: 5px;
 }
 
 
@@ -211,6 +217,11 @@ p.desc {
 }
 .location {
     color: @light;
+    display: block;
+    padding: 2px 0;
+    &:before {
+       content: '↘';
+    }
 }
 
 
@@ -291,7 +302,8 @@ ul.partners {
 // Content blocks n stuff
 .container {
     > h2 {
-        font-size: 4em;
+        font-size: 3em;
+        @media screen and (min-width:@screen-xs) { font-size: 4em; }
     }
 }
 section {
@@ -378,10 +390,9 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding: 50px 0;
-    p {
-        margin: 0;
-    }
+    padding: 40px 0;
+    background: white;
+    p { margin: 0; }
 }
 
 
@@ -411,41 +422,43 @@ img::-moz-selection {
 #google-container {
   position: relative;
   width: 100%;
-  height: 200px;
+  min-height: 600px;
   background-color: #e7eaf0;
 }
-@media only screen and (min-width: 768px) {
-  #google-container {
-    height: 300px;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  #google-container {
-    height: 600px;
-  }
-}
+// @media only screen and (min-width: 768px) {
+//   #google-container {
+//     height: 300px;
+//   }
+// }
+// @media only screen and (min-width: 1170px) {
+//   #google-container {
+//     height: 600px;
+//   }
+// }
 
 #cd-google-map {
   position: relative;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
-#cd-google-map address {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  padding: 1em 1em;
-  background-color: rgba(211, 104, 104, 0.9);
-  color: white;
-  font-size: 13px;
-  font-size: 0.8125rem;
-}
-@media only screen and (min-width: 768px) {
-  #cd-google-map address {
-    font-size: 15px;
-    font-size: 0.9375rem;
-    text-align: center;
-  }
-}
+// #cd-google-map address {
+//   position: absolute;
+//   width: 100%;
+//   bottom: 0;
+//   left: 0;
+//   padding: 1em 1em;
+//   background-color: rgba(211, 104, 104, 0.9);
+//   color: white;
+//   font-size: 13px;
+//   font-size: 0.8125rem;
+// }
+// @media only screen and (min-width: 768px) {
+//   #cd-google-map address {
+//     font-size: 15px;
+//     font-size: 0.9375rem;
+//     text-align: center;
+//   }
+// }
 
 .sqb {
     font-size: 1.2em;
@@ -457,6 +470,10 @@ img::-moz-selection {
     margin-left: 10px;
     margin-bottom: 1px;
 }
+// .gonuma {
+//     cursor: pointer;
+//     padding: 3px;
+// }
 
 #cd-zoom-in, #cd-zoom-out {
     height: 32px;

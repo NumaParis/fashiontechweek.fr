@@ -2,8 +2,6 @@ var latitude = 48.867721,
 	longitude = 2.34963,
 	map_zoom = 17;
 
-
-
 //google map custom marker icon - .png fallback for IE11
 var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
 var marker_url = ( is_internetExplorer11 ) ? 'images/cd-icon-location.png' : 'images/cd-icon-location.svg';
@@ -15,6 +13,37 @@ var	main_color = '#2d313f',
 
 //we define here the style of the map
 var style= [ 
+
+		{
+			//set saturation for the labels on the map
+			elementType: "labels",
+			stylers: [
+				{saturation: saturation_value}
+			]
+		},  
+	    {	//poi stands for point of interest - don't show these lables on the map 
+			featureType: "poi",
+			elementType: "labels",
+			stylers: [
+				{visibility: "off"}
+			]
+		},
+		{
+			//don't show highways lables on the map
+	        featureType: 'road.highway',
+	        elementType: 'labels',
+	        stylers: [
+	            {visibility: "off"}
+	        ]
+	    }, 
+		{ 	
+			//don't show local road lables on the map
+			featureType: "road.local", 
+			elementType: "labels.icon", 
+			stylers: [
+				{visibility: "off"} 
+			] 
+		},
 	{
 		featureType: 'landscape',
 		elementType: 'all',
@@ -41,15 +70,6 @@ var style= [
 			{ saturation: -81 },
 			{ lightness: -86 },
 			{ visibility: 'simplified' }
-		]
-	},{
-		featureType: 'poi',
-		elementType: 'all',
-		stylers: [
-			{ hue: '#ff0000' },
-			{ saturation: 100 },
-			{ lightness: -36 },
-			{ visibility: 'off' }
 		]
 	},{
 		featureType: 'road.arterial',
@@ -79,25 +99,11 @@ var style= [
 			{ visibility: 'on' }
 		]
 	},{
-		featureType: 'poi',
+		featureType: 'poi.park',
 		elementType: 'all',
 		stylers: [
-			{ hue: '#f3f3f3' },
-			{ saturation: -100 },
-			{ lightness: 79 },
-			{ visibility: 'simplified' }
-		]
-	},{
-		featureType: 'poi.government',
-		elementType: 'all',
-		stylers: [
-
-		]
-	},{
-		featureType: 'poi.business',
-		elementType: 'all',
-		stylers: [
-
+			{ hue: '#b3f5b9' },
+			{ visibility: 'on' }
 		]
 	}
 ];
@@ -223,11 +229,10 @@ function CustomZoomControl(controlDiv, map) {
 	//grap the zoom elements from the DOM and insert them in the map 
   	var controlUIzoomIn= document.getElementById('cd-zoom-in'),
   		controlUIzoomOut= document.getElementById('cd-zoom-out'),
-  		// controlUIzoomOut= document.getElementsByClassName("stopButton")[0];
   		controlUIloc1= document.getElementById('loc1'),
-  		controlUIloc2= document.getElementById('loc2');
-  		controlUIloc3= document.getElementById('loc3');
-  		controlUIloc4= document.getElementById('loc4');
+  		controlUIloc2= document.getElementById('loc2'),
+  		controlUIloc3= document.getElementById('loc3'),
+  		controlUIloc4= document.getElementById('loc4'),
   		controlUIloc5= document.getElementById('loc5');
   	// The locations etc.
   	controlDiv.appendChild(controlUIloc1);
