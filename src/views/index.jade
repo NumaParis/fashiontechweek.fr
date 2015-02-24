@@ -7,7 +7,6 @@ html(lang='en')
     meta(name='description', content='')
     meta(name='author', content='')
     title Fashion And tech week.
-    link(rel="fashion tech week" href="images/fashiontechweek.png")
     link(href='css/style.css', rel='stylesheet')
     link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
 
@@ -20,8 +19,6 @@ html(lang='en')
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-59815331-3', 'auto');
       ga('send', 'pageview');
-
-    //- img#fbx(src="images/fashiontechweek.png",property="og:image")
     
     nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
       .container
@@ -116,7 +113,7 @@ html(lang='en')
     section#organisateurs
       .container
         h2.text-center Co Organisateurs
-        <hr>
+        a(href="http://www.fashiontechweek.fr/"): img.fbx.center-block(src="images/fashiontechweek.png", property="og:image")
         .coorg
           .col
             .img: a(href="https://numa.paris/"): img.numa(src="images/logo_numa.png", alt="partner")
