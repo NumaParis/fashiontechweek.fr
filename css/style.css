@@ -2627,6 +2627,9 @@ ul {
 .text-intro {
   font-size: 1.4em;
 }
+.text-intro a {
+  color: #ffffff;
+}
 .ftw {
   width: 90%;
   max-width: 600px;
