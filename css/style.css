@@ -2784,6 +2784,18 @@ ul.partners li img.cnd {
 ul.partners li img.smc {
   width: 70px;
 }
+ul.partners li img.tfl {
+  width: 100px;
+}
+ul.partners li img.silex {
+  width: 100px;
+}
+ul.partners li img.lectra {
+  width: 70px;
+}
+ul.partners li img.uplift {
+  width: 90px;
+}
 ul.partners li:hover img {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
