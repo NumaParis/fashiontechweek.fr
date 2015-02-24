@@ -2900,11 +2900,10 @@ img::-moz-selection {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-#fbx {
+.fbx {
   display: block;
   height: 1px;
   width: 1px;
-  visibility: hidden;
 }
 .sqb {
   font-size: 1.2em;
