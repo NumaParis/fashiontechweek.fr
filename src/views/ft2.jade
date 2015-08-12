@@ -34,10 +34,10 @@ html(lang='en')
           ul.nav.navbar-nav
             li.hidden: a(href='#page-top')
             li: a.page-scroll(href='#about') A propos
-            //- li: a.page-scroll(href='#program') Programme
+            li: a.page-scroll(href='#program') Programme
             li: a.page-scroll(href='#organisateurs') Organisateurs
             li: a.page-scroll(href='#partners') Partenaires
-            //- li: a.page-scroll(href='#cd-google-map') Lieux
+            li: a.page-scroll(href='#cd-google-map') Lieux
     
     header.intro#about
         .container
@@ -45,28 +45,11 @@ html(lang='en')
             .col-md-6: img(src="images/fashiontechweekparis.svg", alt="Fashiontechweekparis").ftw
             .col-md-6
               .introbox
-                h2 19 - 27 septembre 2015
-                h1 Venez bousculer la mode lors de la 3ème FashionTech week Paris !
-                h3
-                  a(href="http://bit.ly/FTW3callproject", target="_blank") Call for event - FashionTech Week Paris
-                h3
-                  a(href="http://bit.ly/FTW3callevent", target="_blank") Call for projects - FashionTech Week Paris
-
-                //- h2(property="og:title") NUMA avec l’ESCP Europe, Iconity, Hall Couture et La Fonderie, en partenariat avec ELLE
-                //- p.text-intro Impression digitale, vêtements connectés, textile numérique : l’innovation ouvre à la mode et  au prêt-à -porter une infinité d’opportunités et bouscule les modèles établis. Retrouvez la FashionTech à NUMA, La Gaîté Lyrique, La Paillasse et l’ESCP Europe pendant 5 jours pour réfléchir, construire et découvrir ensemble la mode de demain. <br> <a href="https://twitter.com/hashtag/fashiontech" target="_blank"><img src="images/icon_twitter.svg" alt="twitter">#fashiontech</a> &nbsp;&nbsp; <a href="https://twitter.com/hashtag/FTweek" target="_blank"><img src="images/icon_twitter.svg" alt="twitter">#FTweek</a>
-                //- p.text-intro La Fashion Tech c’est aussi à <a href="http://fashiontechdays.fr/" target="_blank">Roubaix</a></p>
+                h2(property="og:title") NUMA avec l’ESCP Europe, Iconity, Hall Couture et La Fonderie, en partenariat avec ELLE
+                p.text-intro Impression digitale, vêtements connectés, textile numérique : l’innovation ouvre à la mode et  au prêt-à -porter une infinité d’opportunités et bouscule les modèles établis. Retrouvez la FashionTech à NUMA, La Gaîté Lyrique, La Paillasse et l’ESCP Europe pendant 5 jours pour réfléchir, construire et découvrir ensemble la mode de demain. <br> <a href="https://twitter.com/hashtag/fashiontech" target="_blank"><img src="images/icon_twitter.svg" alt="twitter">#fashiontech</a> &nbsp;&nbsp; <a href="https://twitter.com/hashtag/FTweek" target="_blank"><img src="images/icon_twitter.svg" alt="twitter">#FTweek</a>
+                p.text-intro La Fashion Tech c’est aussi à <a href="http://fashiontechdays.fr/" target="_blank">Roubaix</a></p>
     
     section#program
-      .container
-        .row
-          .col-sm-12
-            h2 19 - 27 septembre 2015 la 3ème édition de la FashionTech week Paris en partenariat avec ELLE.
-            p La mode de demain se créé maintenant : wearables, matières textiles innovantes, boutiques connectées... Les possibilités et perspectives sont multiples.
-            p Paris, capitale de la mode et hub européen de l’innovation est un acteur clé de la FashionTech. Une ville choisie pour réunir cet écosystème en pleine croissance (marques de luxe et de prêt à porter, créateurs, hackers, startups …) s'intéressant à la combinaison de ces domaines pour continuer de faire émerger, partager et co-construire la FashionTech.
-            p Au-delà du succès rencontré par l’événement auprès du grand public et des professionnels il a permis de mettre en lumière des initiatives innovantes comme Wair, foulard anti-pollution qui a par la suite gagné le défis Cisco ou Clother, startup qui remporta 2 prix au dernier MadeInESCP.
-            p Au programme de cette édition: un green hackathon, startup pitch, showroom de créateurs, barcamp, conférences ...
-    
-    //- section#program
       .container
         h2.text-center Programme
         .day
@@ -171,7 +154,7 @@ html(lang='en')
             li: a(href="http://www.lectra.com/fr" name="Lectra" target="_blank"): img.lectra(src="images/logo_lectra.png", alt="Lectra")
             li: a(href="http://upfit-services.com/" name="upfit-services" target="_blank"): img.uplift(src="images/logo_uplift.png", alt="Upfit")
     
-    //- section#cd-google-map
+    section#cd-google-map
       #google-container
       #loc1.sqb NUMA: 39 Rue du Caire
       #loc2.sqb La Gaîté Lyrique: 3bis Rue Papin
@@ -191,5 +174,5 @@ html(lang='en')
     script(src='assets/jquery/jquery.easing.min.js')
     script(src='assets/bootstrap/js/bootstrap.min.js')
     script(src="js/app.js")
-    //- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjSkiy68CUTGVAELIKh_goNZTFRRzv9rw")
-    //- script(src="assets/maps/map.js")
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjSkiy68CUTGVAELIKh_goNZTFRRzv9rw")
+    script(src="assets/maps/map.js")

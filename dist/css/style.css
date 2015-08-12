@@ -2617,7 +2617,7 @@ ul {
 }
 .intro {
   padding: 100px 0;
-  background: url(../images/header_pat.png) repeat-x top left;
+  background: url(../images/header_img.jpg) repeat-x top left;
 }
 @media screen and (min-width: 768px) {
   .intro {
@@ -2635,30 +2635,47 @@ ul {
   max-width: 600px;
 }
 .introbox {
-  display: table-cell;
-  vertical-align: middle;
-  background: black;
-  padding: 30px;
-  color: #ffffff;
+  display: block;
+  background: transparent;
+  border: 13px solid black;
+  padding: 15px 30px 30px 30px;
+  color: #000000;
+}
+.introbox h2 {
+  text-decoration: underline;
+}
+.introbox h3 a {
+  background: white;
+  display: block;
+  margin-bottom: 15px;
+  color: black;
+  padding: 15px;
 }
 .btn.inscript {
   background: white;
-  color: #000;
+  background: #000000;
+  color: #ffaeaa;
   font-size: 1.2em;
   text-decoration: none;
   display: inline-block;
   margin-bottom: 5px;
 }
 #program {
-  background-image: -webkit-linear-gradient(top, #43e0ff 0%, #ffe3a6 100%);
-  background-image: -o-linear-gradient(top, #43e0ff 0%, #ffe3a6 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#43e0ff), to(#ffe3a6));
-  background-image: linear-gradient(to bottom, #43e0ff 0%, #ffe3a6 100%);
+  background-image: -webkit-linear-gradient(top, #ffaeaa 0%, #ffe3a6 100%);
+  background-image: -o-linear-gradient(top, #ffaeaa 0%, #ffe3a6 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaeaa), to(#ffe3a6));
+  background-image: linear-gradient(to bottom, #ffaeaa 0%, #ffe3a6 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff43e0ff', endColorstr='#ffffe3a6', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffaeaa', endColorstr='#ffffe3a6', GradientType=0);
+}
+#program .container {
+  background: white;
+}
+#program .container p {
+  font-size: 1.4em;
 }
 .event {
-  background: black;
+  background: white;
   padding: 19px 0;
   margin-bottom: 2px;
 }
@@ -2667,17 +2684,17 @@ ul {
 }
 strong.time {
   font-size: 2em;
-  color: #ffffff;
+  color: #000000;
 }
 h4.name {
   font-size: 1.6em;
   margin: 0px;
   padding: 0px;
-  color: #ffaeaa;
+  color: #000000;
 }
 p.desc,
 p.desc a {
-  color: #ffe3a6;
+  color: #000000;
 }
 @media screen and (min-width: 768px) {
   p.desc {
