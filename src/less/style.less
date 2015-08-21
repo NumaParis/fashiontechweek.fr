@@ -245,11 +245,12 @@ p.desc {
 .coorg {
     .col {
         padding: 0px @grid-gutter-width/2 0px @grid-gutter-width/2;
-        float: left;
         width: 100%;
+        display: inline-block;
+        vertical-align: top;
         @media screen and (min-width: @screen-xs) { width: 100%/2; }
         @media screen and (min-width: @screen-sm) { width: 100%/3; }
-        @media screen and (min-width: @screen-md) { width: 100%/5; }
+        @media screen and (min-width: @screen-md) { width: 100%/3; }
     }
     .img {
         padding: @grid-gutter-width;
@@ -279,7 +280,7 @@ ul.partners {
         display: inline-block;
         width: 200px;
         list-style-type: none;
-        margin: 1.3em;
+        margin: 2em 1.3em;
         img {
             // .transition(250ms);
             .desaturate;
@@ -287,11 +288,12 @@ ul.partners {
             margin-left: auto;
             margin-right: auto;
             cursor: pointer;
-            // &.IlleDeFrance   {width:160px;}
-            // &.google         {width:100px;}
-            // &.bnp            {width: 160px;}
-            // &.sncf           {width: 100px;}
-            // &.orange         {width: 90px;}
+            
+            &.wearhacks      {width:100px;}
+            &.claireeliot    {width:150px;}
+            &.interlaced     {width: 120px;}
+            &.clausette      {width: 70px;}
+            &.player         {width: 60px;}
             // &.atelier        {width: 160px;}
             // &.atalanta       {width: 160px;}
             

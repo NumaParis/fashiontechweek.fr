@@ -2711,8 +2711,9 @@ p.desc a {
 }
 .coorg .col {
   padding: 0px 15px 0px 15px;
-  float: left;
   width: 100%;
+  display: inline-block;
+  vertical-align: top;
 }
 @media screen and (min-width: 480px) {
   .coorg .col {
@@ -2726,7 +2727,7 @@ p.desc a {
 }
 @media screen and (min-width: 992px) {
   .coorg .col {
-    width: 20%;
+    width: 33.33333333%;
   }
 }
 .coorg .img {
@@ -2761,7 +2762,7 @@ ul.partners li {
   display: inline-block;
   width: 200px;
   list-style-type: none;
-  margin: 1.3em;
+  margin: 2em 1.3em;
 }
 ul.partners li img {
   -webkit-filter: grayscale(100%);
@@ -2773,6 +2774,21 @@ ul.partners li img {
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+}
+ul.partners li img.wearhacks {
+  width: 100px;
+}
+ul.partners li img.claireeliot {
+  width: 150px;
+}
+ul.partners li img.interlaced {
+  width: 120px;
+}
+ul.partners li img.clausette {
+  width: 70px;
+}
+ul.partners li img.player {
+  width: 60px;
 }
 ul.partners li img.elle {
   width: 110px;
