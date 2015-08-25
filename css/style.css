@@ -2794,6 +2794,9 @@ ul.partners.small li img.iconity {
 ul.partners.small li img.lisaa {
   width: 170px;
 }
+ul.partners.compressed li {
+  width: 16%;
+}
 ul.partners li {
   display: inline-block;
   width: 200px;
