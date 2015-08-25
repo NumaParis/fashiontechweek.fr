@@ -2640,14 +2640,15 @@ ul {
   max-width: 600px;
 }
 .introbox {
+  background: white;
   display: block;
-  background: transparent;
   border: 13px solid black;
   padding: 15px 30px 30px 30px;
   color: #000000;
 }
 .introbox h2 {
   text-decoration: underline;
+  font-weight: normal;
 }
 .introbox h3 a {
   background: white;
