@@ -51,7 +51,11 @@ h6 {
     // letter-spacing: 1px;
     // font-family: 'simplon_bp_regularregular';
 }
-
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 p, ul {
     margin: 0 0 25px;
     // font-size: 18px;
@@ -199,14 +203,20 @@ p, ul {
 #program {
     #gradient>.vertical(@pink, @pale);
     .container {
-        background: white;
-        p {
-            font-size: 1.4em;
+        // background: white;
+        p,ul {
+            font-size: 1.3em;
+            line-height: 1.4em;
         }
     }
     // * {outline: 1px dotted red;}
 }
-
+// .intro {
+//     p {
+//         font-size: 1.3em;
+//         line-height: 1.4em;
+//     }
+// }
 .event {
     background: white;
     padding: 19px 0;
@@ -222,24 +232,28 @@ strong.time {
 }
 h4.name {
     font-size: 1.6em;
-    margin: 0px;
-    padding: 0px;
-    color: @black;
+    // padding-bottom: 1em;
+    // margin: 0px;
+    // padding: 0px;
+    color: @blue;
 }
 
-p.desc {
+.desc {
     &, a { color: @black; }
     @media screen and (min-width:@screen-sm) { margin:0; }
 }
 .location {
-    color: @light;
+    color: black;
     display: block;
     padding: 2px 0;
     &:before {
        content: '↘';
     }
 }
-
+.frontdesc {
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
 
 
 .coorg {
@@ -275,7 +289,31 @@ p.desc {
 ul.partners {
     display: block;
     padding: 20px 0;
-
+    &.secon {
+        // * { outline: 1px solid red; }
+        li {
+            width: 30%;
+            img {
+                &.elle  { width: 200px; }
+                &.lisaa { width: 300px; }
+            }
+        }
+    }
+    &.small {
+        li {
+            // outline: 1px solid red;
+            width: 25%;
+            img {
+                &.wearhacks   { width: 90px; }
+                &.wair        { width: 100px; }
+                &.lapaillasse { width: 100px; }
+                &.hallc       { width: 80px; }
+                &.iconity     { width: 120px; }
+                &.lisaa       { width: 170px; }
+                
+            }
+        }
+    }
     li {
         display: inline-block;
         width: 200px;
@@ -296,9 +334,7 @@ ul.partners {
             &.player         {width: 60px;}
             // &.atelier        {width: 160px;}
             // &.atalanta       {width: 160px;}
-            
             // the new ones.
-            &.elle           {width: 110px;}
             &.maddyness      {width: 170px;}
             &.frenchweb      {width: 80px;}
             &.ubergizmo      {width: 190px;}

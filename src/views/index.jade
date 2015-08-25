@@ -8,8 +8,7 @@ html(lang='en')
     meta(name='author', content='Tristan Lebleu Charlotte de Broglie Marius Nedelcu')
     meta(name="keywords" content="fashion technology smart materials nanotech paris innovations textile")
     meta(property="og:image" content="http://fashiontechweek.fr/images/ftwk.png") 
-    title Fashion And tech week.
-    <!-- Favicons -->
+    title FashionandTechweek
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="icon" href="images/favicon.ico">
     link(href='css/style.css', rel='stylesheet')
@@ -45,91 +44,119 @@ html(lang='en')
             .col-md-6: img(src="images/fashiontechweekparis.svg", alt="Fashiontechweekparis").ftw
             .col-md-6
               .introbox
-                h2 19 - 27 septembre 2015
+                h2 Mercredi 18 - 26
                 h1 Venez bousculer la mode lors de la 3ème FashionTech week Paris !
-                h3
+                //- h3
                   a(href="http://bit.ly/FTW3callproject", target="_blank") Call for event - FashionTech Week Paris
-                h3
+                //- h3
                   a(href="http://bit.ly/FTW3callevent", target="_blank") Call for projects - FashionTech Week Paris
 
                 //- h2(property="og:title") NUMA avec l’ESCP Europe, Iconity, Hall Couture et La Fonderie, en partenariat avec ELLE
                 //- p.text-intro Impression digitale, vêtements connectés, textile numérique : l’innovation ouvre à la mode et  au prêt-à -porter une infinité d’opportunités et bouscule les modèles établis. Retrouvez la FashionTech à NUMA, La Gaîté Lyrique, La Paillasse et l’ESCP Europe pendant 5 jours pour réfléchir, construire et découvrir ensemble la mode de demain. <br> <a href="https://twitter.com/hashtag/fashiontech" target="_blank"><img src="images/icon_twitter.svg" alt="twitter">#fashiontech</a> &nbsp;&nbsp; <a href="https://twitter.com/hashtag/FTweek" target="_blank"><img src="images/icon_twitter.svg" alt="twitter">#FTweek</a>
                 //- p.text-intro La Fashion Tech c’est aussi à <a href="http://fashiontechdays.fr/" target="_blank">Roubaix</a></p>
     
-    section#program
+    section
       .container
         .row
-          .col-sm-12
-            h2 19 - 27 septembre 2015 la 3ème édition de la FashionTech week Paris en partenariat avec ELLE.
+          .col-sm-12.frontdesc
+            h3 19 - 26 septembre 2015 la 3ème édition de la FashionTech week Paris en partenariat avec ELLE.
             p La mode de demain se créé maintenant : wearables, matières textiles innovantes, boutiques connectées... Les possibilités et perspectives sont multiples.
             p Paris, capitale de la mode et hub européen de l’innovation est un acteur clé de la FashionTech. Une ville choisie pour réunir cet écosystème en pleine croissance (marques de luxe et de prêt à porter, créateurs, hackers, startups …) s'intéressant à la combinaison de ces domaines pour continuer de faire émerger, partager et co-construire la FashionTech.
             p Au-delà du succès rencontré par l’événement auprès du grand public et des professionnels il a permis de mettre en lumière des initiatives innovantes comme Wair, foulard anti-pollution qui a par la suite gagné le défis Cisco ou Clother, startup qui remporta 2 prix au dernier MadeInESCP.
             p Au programme de cette édition: un green hackathon, startup pitch, showroom de créateurs, barcamp, conférences ...
     
-    //- section#program
+    section#program
       .container
         h2.text-center Programme
         .day
-            h3 Lundi 02
+            h3 Mercredi 18 Jeudi 20
           .row.event
-            .col-sm-2: strong.time 19h - 22h00
-            .col-sm-4: h4.name Ouverture de La FashionTech <br> Conférence : mode : prêt à innover ?
-            .col-sm-4: p.desc Présentation de le deuxième édition de la FashionTech week et des partenaires. <br> Quelle mode pour demain ? Etat des lieux et prospective, avec: <br>  <br> - Pierre François Lelouet, PDG de NellyRodi <br> - Céline Lippi, fondatrice Fashion Capital Partners <br> - Antoine Menet, Directeur E-Business The Other Store
-            .col-sm-2
-              a.btn.inscript(href='http://events.numa.paris/Evenements/FashionTech-2-Soiree-d-ouverture' target="_blank") Inscription
-              a.page-scroll.location(href='#cd-google-map') accueilli par NUMA
+            .col-sm-6
+              strong.time 17h - 18h
+              h4.name Le GREENATHON de la Fashion Tech Week - Curated by WEARHACKS
+              a.btn.inscript(href='https://greenathon-fashiontechweek.splashthat.com/' target="_blank") Inscription
+              a.page-scroll.location(href='#cd-google-map') accueilli par La PAILLASSE
+              ul.list-unstyled.partners.small.clearfix
+                li: a(href="http://www.wearhacks.com/" name="wearhacks" target="_blank"): img.wearhacks(src="images/logo_wearhacks.png", alt="wearhacks")
+                li: a(href="https://wair.io/" name="wair"): img.wair(src="images/logo_wair.png", alt="partner")
+                li: a(href="http://lapaillasse.org/" name="La paillasse" target="_blank"): img.lapaillasse(src="images/logo_lapaillasse.png", alt="Lapaillasse")
+                li: a(href="http://www.hallcouture.com/" name="hallcouture"): img.hallc(src="images/logo_hallcouture.png", alt="partner")
+                
+
+            .col-sm-6: p.desc Le challenge : comment rendre la mode du futur plus responsable ? Comment la technologie et les textiles innovants pourraient-ils contribuer à créer des vêtements et accessoires plus durables ? Un vrai marathon de création autour du thème « Mode, numérique et nouveaux matériaux au service de l’environnement ». Le tout sous forme de défi façon Hackathon : 54 heures de création non-stop en équipe, accompagnées par des mentors experts dans le domaine de la mode, de la technologie et/ou de l'écologie et ayant pour but d’éduquer et de former aux vêtements innovants et connectés. L’évènement se veut multidisciplinaire et accueillera des designers, créateurs, développeurs, hackers, ingénieurs, makers… Les projets gagnants seront exposés au FashionTech Showroom lors de la FashionTech Week ainsi que lors d’un évènement relatif à la COP21 en décembre 2015 PLUS D’INFOS ET INSCRIPTIONS : 
+              a(href="https://greenathon-fashiontechweek.splashthat.com/" target="_blank") greenathon-fashiontechweek.splashthat.com
 
         .day
-            h3 Mardi 03
-          .row.event(style="margin-bottom:0")
-            .col-sm-2: strong.time 19h - 20h
-            .col-sm-4: h4.name Fashion Startups Pitch Night !
-            .col-sm-4: p.desc Pitchs des 5 start-up sélectionnées par appel à projet. Un prix sera décerné au meilleur pitch par un jury de professionnels avec: <br> Céline Lippi, <a href="#">Fashion Capital Parners</a> &amp; <a href="#">Fashion Tech Lab</a> <br> Benoit Marrel, <a href="#">Breega Capital</a> <br> Renaud Guillerm, <a href="#">Vide-dressing</a> <br> Antoine Régis, <a href="#">ChicTypes</a> <br> Jeanne Bloch, <a href="#">Sustainable innovation &amp; Performance</a>
-            .col-sm-2
-              a.btn.inscript(href='http://events.numa.paris/Evenements/FashionTech-2-Day-2-Fashion-Pitch-Night' target="_blank") Inscription
+            h3 Lundi 21 septembre
+          .row.event
+            .col-sm-6
+              strong.time 18h30 à 19h45 à NUMA
+              h4.name Quels lieux et quelles formations pour le secteur de la FashionTech en France ?
+              a.btn.inscript(href='http://events.numa.paris/' target="_blank") Inscription
               a.page-scroll.location(href='#cd-google-map') accueilli par NUMA
+
+            .col-sm-6: p.desc Pour répondre à un secteur en pleine expansion de nombreuses structures d’accompagnements ont vu le jour en 2014 : incubateurs, accélérateurs, co-working .. Les écoles de mode commencent elles aussi à mettre en place des cursus dédiés à la technologie et la mode. Comment accompagner au mieux le développement de ce secteur ? Quelle place la FashionTech française occupe t-elle sur le plan international ? <br>Vous êtes étudiant, créateurs, startuppers, en quoi ces structures peuvent-elles vous être utiles ? Qu’en attendez-vous ?<br>
+              h3 Avec:
+              ul.desc
+                li Annick Jeheanne, HubMode 
+                li Alice Gras, Hall Couture
+                li Look Forward, incubateur de Showroom Privé 
+                li Anne Balas-Klein, Directrice Management &amp; Fashion Business LISAA mode
+                li Daniel Gerges, directeur de Silicon B
+              
           .row.event
-            .col-sm-2: strong.time 20h - 21h
-            .col-sm-4: h4.name Success story d'entrepreneurs 
-            .col-sm-4: p.desc Romain Moyne, co-fondateur de Where to get.it et Renaud Guillerm, co-fondateur de Vide-dressing
-            .col-sm-2
+            .col-sm-6
+              strong.time 20h à 21h15
+              h4.name Mode, open source, impression 3D, tissus connectés : quels enjeux, risques et opportunités pour les marques et les créateurs ?
+              a.btn.inscript(href='http://events.numa.paris/' target="_blank") Inscription
+              a.page-scroll.location(href='#cd-google-map') accueilli par NUMA
+
+            .col-sm-6
+              h3 Modération :
+              ul.desc
+                li Naïma Alahyane Rogeon, avocate, Cabinet Alain Bensoussan 
+                li Vincent Dugast, créateur
+                li Frédéric Lintz, designer, co-fondateur de Eliumstudio
+              p Ouverture des inscriptions le 31 aout
+        .day
+            h3 Mardi 22 septembre
           .row.event
-            .col-sm-2: strong.time 18h - 21h30
-            .col-sm-4: h4.name Lumière Augmentée par la Danse (Light Augmented by Dance -LAbyD) Workshop pour danseurs "danse et wearable tech
-            .col-sm-4: p.desc En utilisant les techniques des textiles intelligents pour éclairer l’espace corporel des danseurs, l'artiste Jeanne Bloch crée un vocabulaire qui n’est ni tout à fait du mouvement ni tout à fait de la lumière mais qui ne peut exister que par la combinaison des deux. <br>Cette recherche participe à son questionnement sur les alternatives écologiques à l’éclairage scénique. 
-            .col-sm-2
-              a.btn.inscript(href='http://events.numa.paris/Evenements/Workshop-Lumiere-Augmentee-par-la-Danse-Light-Augmented-by-Dance-LAbyD-au-CND' target="_blank") Inscription
-              a.page-scroll.location(href='#cd-google-map') accueilli par CND Centre National de la Danse
+            .col-sm-6
+              strong.time 19h - 22h à NUMA
+              h4.name Fashion Pitch Night !
+              a.btn.inscript(href='http://www.fashionpitchnight.com/' target="_blank") Inscription
+              a.page-scroll.location(href='#cd-google-map') accueilli par NUMA
+              ul.list-unstyled.partners.small.clearfix
+                li: a(href="http://www.lisaa.com/" name="lisaa" target="_blank"): img.lisaa(src="images/logo_lisaa.png", alt="LISAA")
+                li: a(href="https://beiconity.com/"): img.iconity(src="images/logo_iconity.png", alt="partner")
+            .col-sm-6: p.desc The Fashion Pitch Night is dedicated to the startups combining Fashion, Tech &amp; Innovation. 5 startups will pitch their projects to a jury of professionals, a successful entrepreneur will talk about his vision of FashionTech and how he setups this during a keynote and to conclude we will exchange and network thanks to a cocktail! <br><br> 5 startups will be selected as finalists after an European call for project. Apply now, until September 1st! 
+              a(href='http://bit.ly/FTW3callproject') Speakers &amp; 
+              | prizes will be announced soon but you already can register HERE.Event organized by ICONITY with the support of LISAA. <br>
+              | PLUS D’INFOS ET INSCRIPTIONS : 
+              a(href='http://www.fashionpitchnight.com/') fashionpitchnight.com
 
         .day
-            h3 Mercredi 04
+            h3 Jeudi 24 septembre :
           .row.event
-            .col-sm-2: strong.time 18h30
-            .col-sm-4: h4.name Table-ronde "Les nouveaux business models de la mode" 
-            .col-sm-4: p.desc Avec Annabelle Nahum, Co-Fondatrice de  MyCoutureCorner Nicolas Petitjean, Directeur Innovation DBApparel Europe Philippe Ribera, Directeur Marketing Software de Lectra Animée par Valérie Moatti et Céline Abecassis-Moedas, co-directrices académiques de la Chaire d’enseignement et de recherche Lectra- ESCP Europe mode et technologie
-            .col-sm-2
-              a.btn.inscript(href='http://events.numa.paris/Evenements/FashionTech-2-Day-3-L-influence-des-technologies-sur-les-business-models-de-la-mode-a-l-ESCP-EUROPE' target="_blank") Inscription
+            .col-sm-6
+              strong.time 19h - 22h à NUMA
+              h4.name Conférence à l’ESCP Europe : mode, développement durable et technologie.
+              a.btn.inscript(href='http://none' target="_blank") Inscription
               a.page-scroll.location(href='#cd-google-map') accueilli par ESCP Europe
+            .col-sm-6: p.desc Géraldine Vallejo, Directrice Programme Développement Durable, Kering Laurence Jacquot, Directrice des Opérations, Lectra Philippe Mangeard, Président, Agence européenne TK’Blue
+              p Ouverture des INSCRIPTIONS le 31 aout
 
         .day
-            h3 Jeudi 05
+            h3 Samedi 26 septembre :
           .row.event
-            .col-sm-2: strong.time 19h - 20h
-            .col-sm-4: h4.name La communication des marques à l’ère du numérique : multiplicité des temps, des lieux et de l'action
-            .col-sm-4: p.desc Avec la participation de : <br> - Chloé Beillacou, Client service director chez TBWA Paris / DAN Paris<br> -  Fabrice Starzinskas, responsable studio BRIGHT, plateforme de co-création digitale<br> - Gachoucha Kretz,auteure à HEC d'une thèse consacrée au "management de la popularité en ligne : les blogueurs de mode et de luxe" et responsable du MBA "Luxury Business" à l'ISC-P <br> - Pierre Zandrowicz, directeur artistique FatCat films<br> Cette table-ronde sera modérée par Charlotte de Broglie, chargée de mission à La Fonderie, agence numérique de l'Ile de France En partenariat avec le Social Media Club 
-            .col-sm-2
-              a.btn.inscript(href='http://events.numa.paris/Evenements/FashionTech-2-Day-4-La-communication-des-marques-a-l-ere-numerique-a-La-Gaite-Lyrique' target="_blank") Inscription
-              a.page-scroll.location(href='#cd-google-map') accueilli par Gaité Lyrique
-
-        .day
-            h3 Vendredi 06
-          .row.event
-            .col-sm-2: strong.time 19h - 23h
-            .col-sm-4: h4.name Showroom  et ateliers de créateurs innovants <br> Soirée de clôture
-            .col-sm-4: p.desc Pour clôturer ensemble cette deuxième édition de la FashionTech week rendez-vous à La Paillasse à la rencontre des créateurs les plus innovants. Le FashionTech showroom c'est l'occasion pour le grand public de découvrir en avant-première la mode de demain : mode ethique, textiles innovants et projets novateurs. Le jury remettra le prix du "FashionTech creator" à son projet favori. Puis place à la fête avec dj et cocktail. Soirée organisée par Alice Gras de Hall Couture en partenariat avec la Paillasse, Sew&amp;Laine, Eve Simonet et Claire Eliot  <br><br> Membre du jury : <br> Pascal GAUTRAND : Fondateur, designer et consultant chez Made in Tow Première Vision, Made in Town, IFM <br> Isabelle Quéhé : fondatrice de l’ Ethical Fashion Show, Experte mode éthique <br> Arielle Levy : fondatrice de l’Herbe Rouge ; <br> Clotilde Provost : fondatrice de La Méthode, conseillère en communication et création de marque, Consultante indépendante en Entrepreneuriat et stratégies de Communications ; <br> Pierre Mary, Chef de projet DATA chez Tradelab ITD, Biohacker, digital artist and blogger ; <br> Martine Baldassari, professeur agrégée d’économie-gestion et coordinatrice du BTS technico-commercial, lycée Elisa Lemonnier <br> Marie Laurence Chanut : Modéliste confirmée, spécialiste en savoir-faire <br> Charlotte Boutier : diplômée des arts décoratifs de Limoges et Chef de projet événementiel chez Numa
-            .col-sm-2
+            .col-sm-6
+              strong.time 10h
+              h4.name Showroom &amp; Party!
               a.btn.inscript(href='http://events.numa.paris/Evenements/FashionTech-2-Day-5-Showrooms-et-ateliers-createurs-Soiree-de-cloture-a-La-Paillasse' target="_blank") Inscription
               a.page-scroll.location(href='#cd-google-map') accueilli par La Paillasse
+            .col-sm-6: p.desc Stands et animations dès 10h, cocktail et soirée dès 21h. <br> Le Fashion&amp;tech Showroom est le salon parisien de la mode de demain organisé en trois pôles résolument tournés vers le futur: mode innovante, numérique et éthique. Pour découvrir, toucher, essayer, comprendre, acheter les projets textile et mode de demain et rencontrer leurs créateurs. 
+              p Plus d’infos :
+              a(href='https://www.facebook.com/pages/Fashion-Tech-Showroom-Paris/351798608346832?fref=ts') www.facebook.com/pages/Fashion-Tech-Showroom-Paris/
 
     section#organisateurs
       .container
@@ -148,7 +175,7 @@ html(lang='en')
             .img: a(href="https://escpeurope.eu"): img.escp(src="images/logo_escp.png", alt="partner")
             p chaire « Mode et technologie » qui a pour mission de promouvoir auprès des étudiants et alumnis le rôle de la technologie comme catalyseur de l’innovation envisagée sous ses multiples formes dans les secteurs de la mode et du luxe. Cette chaire est soutenue par Lectra.
           .col
-            .img: a(href="https://beiconity.com/"): img.iconity(src="images/logo_wair.png", alt="partner")
+            .img: a(href="https://wair.io/"): img.iconity(src="images/logo_wair.png", alt="partner")
             p WAIR is an innovative Start-up which creates the first connected antipollution scarf. It is at the same time a fashion accessory, an effective protection against the pollution and a measure of air quality sensor. Connected with the application BE AWAIR, the sensor as the telephone can warn the user when the air around him is polluted, in some movements, he can transform his scarf into mask and be protected.
           .col
             .img: a(href="https://inhope.com/"): img.iconity(src="images/logo_inhope.png", alt="partner")
@@ -158,12 +185,15 @@ html(lang='en')
       .container.text-center
         h2 En partenariat avec
         .row
-          ul.list-unstyled.partners.clearfix
+          ul.list-unstyled.partners.secon.clearfix
             li: a(href="http://www.lisaa.com/" name="lisaa" target="_blank"): img.lisaa(src="images/logo_lisaa.png", alt="LISAA")
             li: a(href="http://www.elle.fr/" name="ELLE" target="_blank"): img.elle(src="images/logo_elle.png", alt="ELLE")
+        .row
+          ul.list-unstyled.partners.clearfix
             li: a(href="http://www.wearhacks.com/" name="wearhacks" target="_blank"): img.wearhacks(src="images/logo_wearhacks.png", alt="wearhacks")
             li: a(href="http://lapaillasse.org/" name="La paillasse" target="_blank"): img.lapaillasse(src="images/logo_lapaillasse.png", alt="Lapaillasse")
             li: a(href="https://www.linkedin.com/pub/claire-eliot/55/774/627" name="claireeliot" target="_blank"): img.claireeliot(src="images/logo_claireeliot.png", alt="ClaireEliot")
+            li: a(href="http://www.dressing-room-service.com/" name="Dressing Room Service" target="_blank"): img.dressingroomservice(src="images/logo_dressingroomservice.png", alt="Dressing Room Service")
             
             li: a(href="http://nirparis.fr/" name="The Fashion Loft" target="_blank"): img.tfl(src="images/logo_thefashionloft.png", alt="The Fashion Loft")
             li: a(href="http://www.lectra.com/fr" name="Lectra" target="_blank"): img.lectra(src="images/logo_lectra.png", alt="Lectra")
