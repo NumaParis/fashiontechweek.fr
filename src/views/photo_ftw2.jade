@@ -31,19 +31,19 @@ html(lang='en')
             .logo: img(src="images/logo.svg", alt="FashionTech Paris")
         .collapse.navbar-collapse.navbar-right.navbar-main-collapse
           ul.nav.navbar-nav
-            li.hidden: a(href='#page-top')
+            li.hidden: a(href='http://fashiontechweek.fr')
             li: a.page-scroll(href='#about') A propos
             //- li: a.page-scroll(href='#program') Programme
             li: a.page-scroll(href='#organisateurs') Organisateurs
             li: a.page-scroll(href='#partners') Partenaires
             li: a.page-scroll(href='http://fashiontechweek.fr/photo_ftw2.html') ftweek#2
     
-    header.intro#about
+    //- header.intro#about
         .container
           .row
             .col-md-6: img(src="images/fashiontechweekparis.svg", alt="Fashiontechweekparis").ftw
             .col-md-6
-              .introbox
+              //- .introbox
                 //- h2 Du vendredi 18 septembre au samedi 26 septembre
                 h1 Venez bousculer la mode lors de la 3ème FashionTech week Paris !
                 h3 Du 18 au 26 septembre. La 3ème édition de la FashionTech week Paris en partenariat avec ELLE.
@@ -61,14 +61,13 @@ html(lang='en')
             p Paris, capitale de la mode et hub européen de l’innovation est un acteur clé de la FashionTech. Une ville choisie pour réunir cet écosystème en pleine croissance (marques de luxe et de prêt à porter, créateurs, hackers, startups …) s'intéressant à la combinaison de ces domaines pour continuer de faire émerger, partager et co-construire la FashionTech.
             p Au-delà du succès rencontré par l’événement auprès du grand public et des professionnels il a permis de mettre en lumière des initiatives innovantes comme Wair, foulard anti-pollution qui a par la suite gagné le défis Cisco ou Clother, startup qui remporta 2 prix au dernier MadeInESCP.
             p Au programme de cette édition: un green hackathon, startup pitch, showroom de créateurs, conférences ...
-    h2.text-center Programme
-    br
     section#program
-      .container
-        
+      .container(style="padding-top: 60px")
+        h2 Photos FashionTech#2
+        <div style='position: relative; padding-bottom: 73%; height: 0; overflow: hidden;'><iframe id='iframe' src='//flickrit.com/slideshowholder.php?height=70&size=big&setId=72157651965779267&credit=1&thumbnails=0&transition=0&layoutType=responsive&sort=0' scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' ></iframe></div>
         .day
-            h3 du vendredi 18 au dimanche 20 septembre
-          .row.event
+            h4: a(href="https://www.flickr.com/photos/numaparis/albums/72157651965779267") voir l'album sur flickr 
+          //- .row.event
             .col-sm-6
               //- strong.time 17h - 18h
               h4.name Le GREENATHON de la Fashion Tech Week - Curated by WEARHACKS
@@ -83,113 +82,113 @@ html(lang='en')
             .col-sm-6: p.desc Le challenge : comment rendre la mode du futur plus responsable ? Comment la technologie et les textiles innovants pourraient-ils contribuer à créer des vêtements et accessoires plus durables ? Un vrai marathon de création autour du thème « Mode, numérique et nouveaux matériaux au service de l’environnement ». Le tout sous forme de défi façon Hackathon : 54 heures de création non-stop en équipe, accompagnées par des mentors experts dans le domaine de la mode, de la technologie et/ou de l'écologie et ayant pour but d’éduquer et de former aux vêtements innovants et connectés. L’évènement se veut multidisciplinaire et accueillera des designers, créateurs, développeurs, hackers, ingénieurs, makers… Les projets gagnants seront exposés au FashionTech Showroom lors de la FashionTech Week ainsi que lors d’un évènement relatif à la COP21 en décembre 2015 PLUS D’INFOS ET INSCRIPTIONS : 
               a(href="https://greenathon-fashiontechweek.splashthat.com/" target="_blank") greenathon-fashiontechweek.splashthat.com
 
-        .day
-            h3 Lundi 21 septembre
-          .row.event
-            .col-sm-6
-              strong.time 18h30 à 19h45
-              h4.name Quels lieux et quelles formations pour le secteur de la FashionTech en France ?
-              a.btn.inscript(href=' https://www.numa.paris/Evenements/FashionTech-week-Paris' target="_blank") Inscription
-              a.page-scroll.location(href='#cd-google-map') à NUMA
-              ul.list-unstyled.partners.small.clearfix
-                li: a(href="https://numa.paris/"): img.numa(src="images/logo_numa.png", alt="partner")
-                li: a(href=""): img.lookforward(src="images/logo_lookforward.png", alt="partner")
+        //- //- .day
+        //-     h3 Lundi 21 septembre
+        //-   .row.event
+        //-     .col-sm-6
+        //-       strong.time 18h30 à 19h45
+        //-       h4.name Quels lieux et quelles formations pour le secteur de la FashionTech en France ?
+        //-       a.btn.inscript(href=' https://www.numa.paris/Evenements/FashionTech-week-Paris' target="_blank") Inscription
+        //-       a.page-scroll.location(href='#cd-google-map') à NUMA
+        //-       ul.list-unstyled.partners.small.clearfix
+        //-         li: a(href="https://numa.paris/"): img.numa(src="images/logo_numa.png", alt="partner")
+        //-         li: a(href=""): img.lookforward(src="images/logo_lookforward.png", alt="partner")
 
-            .col-sm-6: p.desc Pour répondre à un secteur en pleine expansion de nombreuses structures d’accompagnements ont vu le jour en 2014 : incubateurs, accélérateurs, co-working .. Les écoles de mode commencent elles aussi à mettre en place des cursus dédiés à la technologie et la mode. Comment accompagner au mieux le développement de ce secteur ? Quelle place la FashionTech française occupe t-elle sur le plan international ? <br>Vous êtes étudiant, créateurs, startuppers, en quoi ces structures peuvent-elles vous être utiles ? Qu’en attendez-vous ?<br>
-              h3 Avec:
-              ul.desc
-                li Annick Jeheanne, HubMode 
-                li Alice Gras, Hall Couture
-                li Look Forward, incubateur de Showroom Privé 
-                li Anne Balas-Klein, Directrice LISAA Mode
-                li Daniel Gergès, directeur de Silicon B
+        //-     .col-sm-6: p.desc Pour répondre à un secteur en pleine expansion de nombreuses structures d’accompagnements ont vu le jour en 2014 : incubateurs, accélérateurs, co-working .. Les écoles de mode commencent elles aussi à mettre en place des cursus dédiés à la technologie et la mode. Comment accompagner au mieux le développement de ce secteur ? Quelle place la FashionTech française occupe t-elle sur le plan international ? <br>Vous êtes étudiant, créateurs, startuppers, en quoi ces structures peuvent-elles vous être utiles ? Qu’en attendez-vous ?<br>
+        //-       h3 Avec:
+        //-       ul.desc
+        //-         li Annick Jeheanne, HubMode 
+        //-         li Alice Gras, Hall Couture
+        //-         li Look Forward, incubateur de Showroom Privé 
+        //-         li Anne Balas-Klein, Directrice LISAA Mode
+        //-         li Daniel Gergès, directeur de Silicon B
               
-          .row.event
-            .col-sm-6
-              strong.time 20h à 21h15
-              h4.name Open source, impression 3D, tissus connectés : quels enjeux, risques et opportunités pour les marques et les créateurs ?
-              //- a.btn.inscript(href='http://events.numa.paris/' target="_blank") Inscription
-              a.page-scroll.location(href='#cd-google-map') à NUMA
+        //-   .row.event
+        //-     .col-sm-6
+        //-       strong.time 20h à 21h15
+        //-       h4.name Open source, impression 3D, tissus connectés : quels enjeux, risques et opportunités pour les marques et les créateurs ?
+        //-       //- a.btn.inscript(href='http://events.numa.paris/' target="_blank") Inscription
+        //-       a.page-scroll.location(href='#cd-google-map') à NUMA
 
-            .col-sm-6
-              //- h3 Modération :
-              ul.desc
-                li Naïma Alahyane Rogeon, avocate, Cabinet Alain Bensoussan 
-                li Vincent Dugast, créateur
-                li Frédéric Lintz, designer, co-fondateur de Eliumstudio
-        .day
-            h3 Mardi 22 septembre
-          .row.event
-            .col-sm-6
-              strong.time 19h - 22h à NUMA
-              h4.name Fashion Pitch Night !
-              a.btn.inscript(href='http://fashionpitchnight.strikingly.com/' target="_blank") Inscription
-              a.page-scroll.location(href='#cd-google-map') à NUMA
-              ul.list-unstyled.partners.small.clearfix
-                li: a(href="https://beiconity.com/"): img.iconity(src="images/logo_iconity.png", alt="partner")
-                li: a(href="http://www.lisaa.com/" name="lisaa" target="_blank"): img.lisaa(src="images/logo_lisaa.png", alt="LISAA")
-                li: a(href="https://numa.paris/"): img.numa(src="images/logo_numa.png", alt="partner")
-            .col-sm-6: p.desc The Fashion Pitch Night is dedicated to the startups combining Fashion, Tech &amp; Innovation. 5 startups will pitch their projects to a jury of professionals, a successful entrepreneur will talk about his vision of FashionTech and how he setups this during a keynote and to conclude we will exchange and network thanks to a cocktail! <br><br> 5 startups will be selected as finalists after an European call for project. Apply now, until September 1st! 
-              a(href='http://bit.ly/FTW3callproject') Speakers &amp; 
-              | prizes will be announced soon but you already can register HERE.Event organized by ICONITY with the support of LISAA. <br>
-              | PLUS D’INFOS ET INSCRIPTIONS : 
-              a(href='http://www.fashionpitchnight.com/') fashionpitchnight.com
-          .row.event
-            .col-sm-6
-              strong.time 19h30 Au Fashion Loft
-              h4.name Mode et Technologie : Les Tissus et​  Vêtements Intelligents​
-              a.btn.inscript(href='http://www.fashionpitchnight.com/' target="_blank") Inscription
-              a.page-scroll.location(href='#cd-google-map') Au Fashion Loft
-              em: a(href="http://www.nirparis.fr/") Nir Paris/tfl, 42 rue d’enghien 75010 Paris 
-              ul.list-unstyled.partners.small.clearfix
-                li: a(href="http://nirparis.fr/" name="The Fashion Loft" target="_blank"): img.tfl(src="images/logo_thefashionloft.png", alt="The Fashion Loft")
-            .col-sm-6: p.desc
-              | <strong>Claire Eliot</strong> : Designer produit/ Creative Technologiste freelance, Professeur en design d’interaction, Objets Connectés, Strates College,  Professeur en Objets interactifs, Webschool,Paris<br><br>
-              | <strong>Lise Sansen</strong> ​: Fashion Designer - Development Manager - Professeur MJM Graphic Design,Education Nationale,<br><br>
-              | <strong>Naima Alahyane Rogeon</strong> : Avocat Directrice du département Design et Création au sein du Cabinet Alain Bensoussan.<br><br>
-              | <strong>Bertrand Duplat</strong> ​​: Co fondateur d'Emiota - créateur​ d'objets de mode connectés​ (Belty ceinture connectée primée au CES Las Vegas 2015). <br><br>
-              | La table ronde permettra un regard croisé technique, créatif et juridique sur les tissus et vêtements de demain.
+        //-     .col-sm-6
+        //-       //- h3 Modération :
+        //-       ul.desc
+        //-         li Naïma Alahyane Rogeon, avocate, Cabinet Alain Bensoussan 
+        //-         li Vincent Dugast, créateur
+        //-         li Frédéric Lintz, designer, co-fondateur de Eliumstudio
+        //- //- .day
+        //-     h3 Mardi 22 septembre
+        //-   .row.event
+        //-     .col-sm-6
+        //-       strong.time 19h - 22h à NUMA
+        //-       h4.name Fashion Pitch Night !
+        //-       a.btn.inscript(href='http://fashionpitchnight.strikingly.com/' target="_blank") Inscription
+        //-       a.page-scroll.location(href='#cd-google-map') à NUMA
+        //-       ul.list-unstyled.partners.small.clearfix
+        //-         li: a(href="https://beiconity.com/"): img.iconity(src="images/logo_iconity.png", alt="partner")
+        //-         li: a(href="http://www.lisaa.com/" name="lisaa" target="_blank"): img.lisaa(src="images/logo_lisaa.png", alt="LISAA")
+        //-         li: a(href="https://numa.paris/"): img.numa(src="images/logo_numa.png", alt="partner")
+        //-     .col-sm-6: p.desc The Fashion Pitch Night is dedicated to the startups combining Fashion, Tech &amp; Innovation. 5 startups will pitch their projects to a jury of professionals, a successful entrepreneur will talk about his vision of FashionTech and how he setups this during a keynote and to conclude we will exchange and network thanks to a cocktail! <br><br> 5 startups will be selected as finalists after an European call for project. Apply now, until September 1st! 
+        //-       a(href='http://bit.ly/FTW3callproject') Speakers &amp; 
+        //-       | prizes will be announced soon but you already can register HERE.Event organized by ICONITY with the support of LISAA. <br>
+        //-       | PLUS D’INFOS ET INSCRIPTIONS : 
+        //-       a(href='http://www.fashionpitchnight.com/') fashionpitchnight.com
+        //-   .row.event
+        //-     .col-sm-6
+        //-       strong.time 19h30 Au Fashion Loft
+        //-       h4.name Mode et Technologie : Les Tissus et​  Vêtements Intelligents​
+        //-       a.btn.inscript(href='http://www.fashionpitchnight.com/' target="_blank") Inscription
+        //-       a.page-scroll.location(href='#cd-google-map') Au Fashion Loft
+        //-       em: a(href="http://www.nirparis.fr/") Nir Paris/tfl, 42 rue d’enghien 75010 Paris 
+        //-       ul.list-unstyled.partners.small.clearfix
+        //-         li: a(href="http://nirparis.fr/" name="The Fashion Loft" target="_blank"): img.tfl(src="images/logo_thefashionloft.png", alt="The Fashion Loft")
+        //-     .col-sm-6: p.desc
+        //-       | <strong>Claire Eliot</strong> : Designer produit/ Creative Technologiste freelance, Professeur en design d’interaction, Objets Connectés, Strates College,  Professeur en Objets interactifs, Webschool,Paris<br><br>
+        //-       | <strong>Lise Sansen</strong> ​: Fashion Designer - Development Manager - Professeur MJM Graphic Design,Education Nationale,<br><br>
+        //-       | <strong>Naima Alahyane Rogeon</strong> : Avocat Directrice du département Design et Création au sein du Cabinet Alain Bensoussan.<br><br>
+        //-       | <strong>Bertrand Duplat</strong> ​​: Co fondateur d'Emiota - créateur​ d'objets de mode connectés​ (Belty ceinture connectée primée au CES Las Vegas 2015). <br><br>
+        //-       | La table ronde permettra un regard croisé technique, créatif et juridique sur les tissus et vêtements de demain.
 
 
-        .day
-            h3 Jeudi 24 septembre :
-          .row.event
-            .col-sm-6
-              strong.time 19h - 22h
-              h4.name Mode, Développement Durable etTechnologie
-              a.btn.inscript(href='http://lime.i-campus.fr/index.php/188427/lang-fr' target="_blank") Inscription
-              a.page-scroll.location(href='#cd-google-map') à l'ESCP Europe
-              ul.list-unstyled.partners.small.clearfix
-                li: a(href="https://escpeurope.eu"): img.escp(src="images/logo_escp.png", alt="partner")
-                li: a(href="http://www.lectra.com/fr" name="Lectra" target="_blank"): img.lectra(src="images/logo_lectra.png", alt="Lectra")
-            .col-sm-6: p.desc
-              | Start-ups et grands groupes viendront témoigner sur cette thématique. Cette table ronde sera suivie d'un cocktail. <br><br>
-              ul
-                li Animation : Céline Abecassis-Moedas et Valérie Moatti,  co-directrices académiques de la Chaire Lectra-ESCP Europe
-                li -
-                li Intervenants : 
-                li Rémi Crinière, Responsable RSE, H&amp;M France
-                li Laurence Jacquot, Directrice des Opérations, Lectra
-                li Philippe Mangeard, Président, Agence européenne TK'Blue
-                li Géraldine Vallejo, Directrice Programme Développement Durable, Kering
-                li Eva Zingoni, Créatrice de mode durable
-                li -
-                li: a(href="http://mode-technologie.fr/") http://mode-technologie.fr/  #ftweek
-        .day
-            h3 Samedi 26 septembre :
-          .row.event
-            .col-sm-6
-              strong.time à partir de 10h
-              h4.name Showroom &amp; Party!
-              a.btn.inscript(href='http://www.eventbrite.com/e/fashion-tech-showroom-3-tickets-18278665982' target="_blank") Inscription
-              a.page-scroll.location(href='#cd-google-map') à La Paillasse
-              ul.list-unstyled.partners.small.clearfix
-                li: a(href="http://lapaillasse.org/" name="La paillasse" target="_blank"): img.lapaillasse(src="images/logo_lapaillasse.png", alt="Lapaillasse")
-                li: a(href="http://www.hallcouture.com/" name="hallcouture"): img.hallc(src="images/logo_hallcouture.png", alt="partner")
-            .col-sm-6: p.desc Stands et animations dès 10h, cocktail et soirée dès 21h. <br> Le Fashion&amp;tech Showroom est le salon parisien de la mode de demain organisé en trois pôles résolument tournés vers le futur: mode innovante, numérique et éthique. Pour découvrir, toucher, essayer, comprendre, acheter les projets textile et mode de demain et rencontrer leurs créateurs. 
-              p Plus d’infos :
-              a(href='https://www.facebook.com/pages/Fashion-Tech-Showroom-Paris/351798608346832?fref=ts') www.facebook.com/pages/Fashion-Tech-Showroom-Paris/ <br></br>
-              a(href="https://www.facebook.com/events/968629516533789/") Facebook event: SOIREE DE CLOTURE - Fashion-Tech Week #3
+        //- //- .day
+        //-     h3 Jeudi 24 septembre :
+        //-   .row.event
+        //-     .col-sm-6
+        //-       strong.time 19h - 22h
+        //-       h4.name Mode, Développement Durable etTechnologie
+        //-       a.btn.inscript(href='http://lime.i-campus.fr/index.php/188427/lang-fr' target="_blank") Inscription
+        //-       a.page-scroll.location(href='#cd-google-map') à l'ESCP Europe
+        //-       ul.list-unstyled.partners.small.clearfix
+        //-         li: a(href="https://escpeurope.eu"): img.escp(src="images/logo_escp.png", alt="partner")
+        //-         li: a(href="http://www.lectra.com/fr" name="Lectra" target="_blank"): img.lectra(src="images/logo_lectra.png", alt="Lectra")
+        //-     .col-sm-6: p.desc
+        //-       | Start-ups et grands groupes viendront témoigner sur cette thématique. Cette table ronde sera suivie d'un cocktail. <br><br>
+        //-       ul
+        //-         li Animation : Céline Abecassis-Moedas et Valérie Moatti,  co-directrices académiques de la Chaire Lectra-ESCP Europe
+        //-         li -
+        //-         li Intervenants : 
+        //-         li Rémi Crinière, Responsable RSE, H&amp;M France
+        //-         li Laurence Jacquot, Directrice des Opérations, Lectra
+        //-         li Philippe Mangeard, Président, Agence européenne TK'Blue
+        //-         li Géraldine Vallejo, Directrice Programme Développement Durable, Kering
+        //-         li Eva Zingoni, Créatrice de mode durable
+        //-         li -
+        //-         li: a(href="http://mode-technologie.fr/") http://mode-technologie.fr/  #ftweek
+        //- //- .day
+        //-     h3 Samedi 26 septembre :
+        //-   .row.event
+        //-     .col-sm-6
+        //-       strong.time à partir de 10h
+        //-       h4.name Showroom &amp; Party!
+        //-       a.btn.inscript(href='http://www.eventbrite.com/e/fashion-tech-showroom-3-tickets-18278665982' target="_blank") Inscription
+        //-       a.page-scroll.location(href='#cd-google-map') à La Paillasse
+        //-       ul.list-unstyled.partners.small.clearfix
+        //-         li: a(href="http://lapaillasse.org/" name="La paillasse" target="_blank"): img.lapaillasse(src="images/logo_lapaillasse.png", alt="Lapaillasse")
+        //-         li: a(href="http://www.hallcouture.com/" name="hallcouture"): img.hallc(src="images/logo_hallcouture.png", alt="partner")
+        //-     .col-sm-6: p.desc Stands et animations dès 10h, cocktail et soirée dès 21h. <br> Le Fashion&amp;tech Showroom est le salon parisien de la mode de demain organisé en trois pôles résolument tournés vers le futur: mode innovante, numérique et éthique. Pour découvrir, toucher, essayer, comprendre, acheter les projets textile et mode de demain et rencontrer leurs créateurs. 
+        //-       p Plus d’infos :
+        //-       a(href='https://www.facebook.com/pages/Fashion-Tech-Showroom-Paris/351798608346832?fref=ts') www.facebook.com/pages/Fashion-Tech-Showroom-Paris/ <br></br>
+        //-       a(href="https://www.facebook.com/events/968629516533789/") Facebook event: SOIREE DE CLOTURE - Fashion-Tech Week #3
 
     section#organisateurs
       .container
