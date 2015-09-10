@@ -2883,6 +2883,9 @@ ul.partners li img.uplift {
 ul.partners li img.lafabrique {
   width: 90px;
 }
+ul.partners li img.modelab {
+  width: 120px;
+}
 ul.partners li:hover img {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
