@@ -9,8 +9,8 @@ html(lang='en')
     meta(name="keywords" content="fashion technology smart materials nanotech paris innovations textile")
     meta(property="og:image" content="http://fashiontechweek.fr/images/ftwk.png")
     title Fashion Tech Week
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="icon" href="images/favicon.ico">
+    link(rel="apple-touch-icon" href="images/apple-touch-icon.png")
+    link(rel="icon" href="images/favicon.ico")
     link(href='css/style.css', rel='stylesheet')
 
 
@@ -34,7 +34,7 @@ html(lang='en')
           ul.nav.navbar-nav
             li.hidden: a(href='#page-top')
             li: a.page-scroll(href='#about') A propos
-            //- li: a.page-scroll(href='#program') Programme
+            li: a.page-scroll(href='#program') Programme
             li: a.page-scroll(href='#organisateurs') Organisateurs
             li: a.page-scroll(href='#partners') Partenaires
             li: a.page-scroll(href='http://fashiontechweek.fr/photo_ftw2.html') ftweek#2
@@ -42,8 +42,7 @@ html(lang='en')
     header.intro#about
         .container
           .row
-            .col-md-6: img(src="images/logo.png", alt="Fashiontechweekparis").ftw
-            .col-md-6
+            .col-md-7
               .introbox
                 h1 Venez bousculer la mode lors de la 4ème FashionTech Week Paris !
                 h3 Du 6 au 13 octobre. La 4ème édition de la FashionTech week Paris en partenariat avec ELLE.
@@ -51,6 +50,7 @@ html(lang='en')
                 p Paris, capitale de la mode et hub européen de l’innovation est un acteur clé de la FashionTech. Une ville choisie pour réunir cet écosystème en pleine croissance (marques de luxe et de prêt à porter, créateurs, hackers, startups …) s'intéressant à la combinaison de ces domaines pour continuer de faire émerger, partager et co-construire la FashionTech.
                 p Au-delà du succès rencontré par l’événement auprès du grand public et des professionnels il a permis de mettre en lumière des initiatives innovantes comme Wair, foulard anti-pollution qui a par la suite gagné le défis Cisco ou Clother, startup qui a remporté 2 prix au dernier MadeInESCP.
                 p Au programme de cette édition: FashionTech Challenge, Startup pitch Night, Expo de créateurs avant-gardistes, tables-rondes et soirées networking et bien plus encore !
+            .col-md-5: img(src="images/logo.png", alt="Fashiontechweekparis").ftw
 
     //- section
       .container
@@ -58,15 +58,18 @@ html(lang='en')
           .col-sm-12.frontdesc
           h3 Jeudi 6 octobre. La FashionTech Conférence & Opening Cocktail.
           p La mode de demain se créée maintenant : wearables, matières textiles innovantes, boutiques connectées... Les possibilités et perspectives sont multiples.
-    h2.text-center Programme
+    p#program
     br
-    section#program
+    br
+    h1.text-center(style="font-size: 48px;") Programme
+    br
+    section#program-content
       .container
 
         .day
             h3 Le jeudi 6 octobre
           .row.event
-            .col-sm-6
+            .col-md-6
               strong.time De 18h30 à 20h00
               h4.name La FashionTech Conférence & Opening Cocktail
               a.btn.inscript(href='http://lime.i-campus.fr/index.php/333277/lang-fr' target="_blank") Inscription
@@ -76,7 +79,7 @@ html(lang='en')
                 li: a(href="http://www.lectra.com/fr" name="Lectra" target="_blank"): img.lectra(src="images/logo_lectra.png", alt="Lectra")
                 li: a(href="http://mode-technologie.fr/" name="chairemodetechnologie" target="_blank"): img.chairemodetechnologie(src="images/logo_chairemodetechnologie.png", alt="Chaire Mode et Technologie")
 
-            .col-sm-6: p.desc Retrouvez-nous autour d’une table ronde sur le thème du Big Data et de la FashionTech, organisée et tenue par ESCP Europe et la Chaire Lectra “Mode & Technologie” suivie du cocktail d’ouverture de la FTWeek dans les locaux de ESCP Europe, 79 avenue de la République, Paris 11ème.
+            .col-md-6: p Retrouvez-nous autour d’une table ronde sur le thème du Big Data et de la FashionTech, organisée et tenue par ESCP Europe et la Chaire Lectra “Mode & Technologie” suivie du cocktail d’ouverture de la FTWeek dans les locaux de ESCP Europe, 79 avenue de la République, Paris 11ème.
               p Céline Abecassis-Moedas & Valérie Moatti, Directeurs académiques de la Chaire Lectra - ESCP Europe animeront cet événement.
               p Cette table ronde rassemblera grandes entreprises et startups pour échanger et débattre sur l’utilisation des données dans la supply chain de la mode.
               p Pour en savoir plus sur la Chaire :&nbsp;
@@ -85,15 +88,15 @@ html(lang='en')
         .day
             h3 Vendredi 7 octobre
           .row.event
-            .col-sm-6
+            .col-md-6
               strong.time 11h00 à 19h30
               h4.name Journée Retail & Innovation
               a.page-scroll.location(href='#cd-google-map') au Numa
-              ul.list-unstyled.partners.small.clearfix
+              ul.list-unstyled.partners.small.compressed.clearfix
                 li: a(href="https://numa.paris/" alt="numa" target="_blank"): img.numa(src="images/logo_numa.png", alt="numa")
                 li: a(href="http://www.picom.fr/" alt="picom" target="_blank"): img.picom(src="images/logo_picom.png", alt="picom")
                 li: a(href="http://www.si-lab.fr/" alt="silab" target="_blank"): img.picom(src="images/logo_picom_shopping_innovation_lab.gif", alt="silab")
-            .col-sm-6: p.desc Aux retailers de toute sorte, grands comptes, PME-ETI, startups, tous ceux intéressés par les enjeux de l’innovation dans le retail, du processus de vente aux nouveaux services pour les consommateurs, en passant par les problématiques de la supply chain et l’évolution des moyens de paiement
+            .col-md-6: p Aux retailers de toute sorte, grands comptes, PME-ETI, startups, tous ceux intéressés par les enjeux de l’innovation dans le retail, du processus de vente aux nouveaux services pour les consommateurs, en passant par les problématiques de la supply chain et l’évolution des moyens de paiement
               h4(style="font-weight: bold;") De 11h à 13h : Nouvelles technologies et nouveaux usages
               p Deux tables-rondes pour creuser les enjeux de la réalité augmentée dans le retail et des liens entre supply chain et expérience client.
               h4(style="font-weight: bold;") De 14h à 18h : Démonstrations des startups du SiLab
@@ -104,29 +107,32 @@ html(lang='en')
         .day
             h3 Du vendredi 7 octobre au dimanche 9 octobre
           .row.event
-            .col-sm-6
+            .col-md-6
               strong.time 19h - 22h à NUMA
               h4.name FashionTech Challenge !
               a.btn.inscript(href='https://www.eventbrite.fr/e/billets-fashiontech-challenge-27489119697?utm_campaign=new_event_email&utm_medium=email&utm_source=eb_email&utm_term=viewmyevent_button' target="_blank") EventBrite
               a.btn.inscript(href='https://www.facebook.com/events/1183712781651041/' target="_blank") Facebook
               a.page-scroll.location(href='#cd-google-map') à La Fabrique
-              ul.list-unstyled.partners.small.clearfix
+              ul.list-unstyled.partners.small.compressed.clearfix
                 li: a(href="https://wair.io/" name="wair" target="_blank"): img.wair(src="images/logo_wair.png", alt="wair")
                 li: a(href="http://www.lafabrique-ecole.fr/" name="lafabrique" target="_blank"): img.lafabrique(src="images/logo_lafabrique.png", alt="lafabrique")
                 li: a(href="http://www.hallcouture.com/" name="hallcouture" target="_blank"): img.hallc(src="images/logo_hallcouture.png", alt="hallcouture")
                 li: a(href="http://www.showroomprive.com/" name="lookforward" target="_blank"): img.lookforward(src="images/logo_lookforward.png", alt="lookforward")
-            .col-sm-6: p.desc Le hackathon Mode & Tech, un week-end de création autour de la mode et du numérique du vendredi 7 au Dimanche 9 Octobre 2016 à La Fabrique, Paris.
-              p <strong style="font-weight: bold;">Vendredi</strong> Accueil / Pitch des idées / Création des équipes
-              p <strong style="font-weight: bold;">Samedi</strong> Prototypage
-              p <strong style="font-weight: bold;">Dimanche</strong> Prototypage / Pitchs / Jury / Résultats
+            .col-md-6: p Le hackathon Mode & Tech, un week-end de création autour de la mode et du numérique du vendredi 7 au Dimanche 9 Octobre 2016 à La Fabrique, Paris.
+              ul
+                li <strong style="font-weight: bold;">Vendredi</strong> Accueil / Pitch des idées / Création des équipes
+                li <strong style="font-weight: bold;">Samedi</strong> Prototypage
+                li <strong style="font-weight: bold;">Dimanche</strong> Prototypage / Pitchs / Jury / Résultats
+
               p <strong style="font-weight: bold;">À gagner :</strong> Grand Prix de la FTWeek / Prix Mode / Prix de l’innovation / Prix Eco-citoyen
               h4(style="font-weight: bold;") L’ÉDITION PRÉCÉDENTE
-              ul.desc
+              ul
                 li L’année dernière nos participants ont eu la chance d’être accompagnés et conseillés par 14 mentors dont : Jeanne Bloch, Claire Eliot, Alice Gras, Lise Sansen, Alexis Kovalenko, Gael Peron, Alice Giordani, et bien d’autres.
                 li Ils ont également eu la chance de voir leurs travaux évalués et récompensés par nos 6 jurys : Maroussia Rebecq (Andrea Crews), Alice Audoin (Art of Change), Axelle Tessandier (AXL Agency), Alexander Ernst (Manhein Network), Gilbert Giacomoni (AgroParisTech, UNESCO) et Cécile Lochard ( Citizen Luxury Agency)
                 li Nous avons décernés 3 prix : Prix de l’innovation citoyenne, Prix du Jury, Prix de la créativité
                 li En récompense, ils se sont vu offrir des journées de mentoring avec certains des membres de notre jury, une incubation à AgroParisTech, des livres sur les textiles innovants…
-              ul.desc En chiffres :
+              p.no-bottom-margin En chiffres :
+              ul
                 li 55 participants
                 li 14 mentors
                 li 6 jurys
@@ -134,7 +140,8 @@ html(lang='en')
               h4(style="font-weight: bold;") CETTE ANNÉE
               p Venez vous challenger lors de ce Hackathon mode et innovation.
               p Vous avez une idée? Donnez lui une chance d'accéder au niveau supérieur en vous mettant en équipe avec des participants de tous les horizons. Marketing, textile, technique, informatique, il y a toutes les compétences requises pour donner des ailes à votre projet.
-              ul.desc Profitez de nombreux avantages:
+              p.no-bottom-margin Profitez de nombreux avantages:
+              ul
                 li Une structure importante et complètement équipée (Imprimantes 3D, découpe laser, materiaux innovants, etc)
                 li Starters Kits offerts à chaque équipe pour démarrer le protoypage
                 li Des mentors et coachs qui vous accompagnent et conseillent
@@ -147,18 +154,18 @@ html(lang='en')
         .day
             h3 Lundi 10 octobre
           .row.event
-            .col-sm-6
+            .col-md-6
               strong.time 18h30 à 21h00
               h4.name FashionTech Meetings - Partagez et collaborez !
               a.page-scroll.location(href='#cd-google-map') à La Paillasse
-              ul.list-unstyled.partners.small.clearfix
+              ul.list-unstyled.partners.small.compressed.clearfix
                 li: a(href="https://www.lapaillasse.org/"): img.lapaillasse(src="images/logo_lapaillasse.png", alt="partner")
                 li: a(href="https://fr.ulule.com/"): img.ulule(src="images/logo_ulule.png", alt="partner")
                 li: a(href="https://www.techshoplm.fr/"): img.techshop(src="images/logo_techshop.png", alt="partner")
                 li: a(href="https://fr.lisaa.com/"): img.lisaa(src="images/logo_lisaa.png", alt="partner")
 
-            .col-sm-6: p.desc Une soirée de réflexion et d’échange organisée par l’école LISAA et Ulule, dans les locaux de La Paillasse. Deux tables-rondes en interaction avec le public :
-              ul.desc
+            .col-md-6: p Une soirée de réflexion et d’échange organisée par l’école LISAA et Ulule, dans les locaux de La Paillasse. Deux tables-rondes en interaction avec le public :
+              ul
                 li <strong style="font-weight: bold;">Conférence</strong> par Angel Moran, DG de LEMO<br />
                   i L'électronique embarqué et le textile appliqué à la santé
                 li <strong style="font-weight: bold;">Table-ronde</strong> avec Tech Shop, Ulule, Pinterest, La Paillasse, LISAA Alumni<br />
@@ -167,17 +174,17 @@ html(lang='en')
         .day
             h3 Mardi 11 octobre
           .row.event
-            .col-sm-6
+            .col-md-6
               strong.time 19h - 22h
               h4.name Fashion Pitch Night
               a.btn.inscript(href='http://www.fashionpitchnight.com/' target="_blank") Inscription
               a.page-scroll.location(href='#cd-google-map') chez VOLUMES
-              ul.list-unstyled.partners.small.clearfix
+              ul.list-unstyled.partners.small.compressed.clearfix
                 li: a(href="http://www.lisaa.com/" name="lisaa" target="_blank"): img.lisaa(src="images/logo_lisaa.png", alt="LISAA")
                 li: a(href="https://fr.ulule.com/" name="ulule" target="_blank"): img.ulule(src="images/logo_ulule.png", alt="ulule")
                 li: a(href="http://www.bigbooster.org/" name="bigbooster" target="_blank"): img.bigbooster(src="images/logo_bb.png", alt="bigbooster")
-                li: a(href="http://volumesparis.org/" name="volumes" target="_blank"): img.numa(src="images/logo_volumes.png", alt="volumes")
-            .col-sm-6
+                li: a(href="http://volumesparis.org/" name="volumes" target="_blank"): img.volumes(src="images/logo_volumes.png", alt="volumes")
+            .col-md-6
               h3 Meet the next FashionTech Startups !
               p La Fashion Pitch Night organisée par Julie Delaude est dédiée aux startups combinant Mode, Tech & Innovation.
               p 5 startups sélectionnées à l’issue d’un appel à projets européen pitcheront leurs projets devant un jury de professionnels,
@@ -190,29 +197,29 @@ html(lang='en')
         .day
             h3 Jeudi 13 octobre :
           .row.event
-            .col-sm-6
+            .col-md-6
               strong.time 10h30 - 18h30
               h4.name FashionTech Expo
               a.btn.inscript(href='https://docs.google.com/forms/d/1h7zzOx-TTQo0n8QhLGplmURFpldwJ_P3d5OJhymCrr8/prefill' target="_blank") Exposer
               a.btn.inscript(href='https://www.eventbrite.com/e/fashiontech-expo-paris-tickets-27026508013' target="_blank") Visiter
               a.page-scroll.location(href='#cd-google-map') à l'Institut Français de la Mode
-              ul.list-unstyled.partners.small.clearfix
+              ul.list-unstyled.partners.small.compressed.clearfix
                 li: a(href="http://www.hallcouture.com/" name="hallcouture" target="_blank"): img.hallc(src="images/logo_hallcouture.png", alt="hallcouture")
                 li: a(href="http://federationfashiontech.com/" name="lafashiontech" target="_blank"): img.lafashiontech(src="images/logo_lafashiontech.png", alt="lafashiontech")
                 li: a(href="http://www.ifm-paris.com/" name="ifm" target="_blank"): img.ifm(src="images/logo_ifm.jpg", alt="ifm")
                 li: a(href="http://brandjoys.com" name="brandjoys" target="_blank"): img.brandjoys(src="images/logo_brandjoys.png", alt="brandjoys")
                 li: a(href="http://hallcouture.com/studiotech-innovative-fashion-productions-and-services/" name="studiotech" target="_blank"): img.studiotech(src="images/logo_studiotech.jpg", alt="studiotech")
-            .col-sm-6: p.desc Une journée d’exposition à l’Institut Français de la Mode, des projets, créateurs et startups FashionTech émergents sélectionnés pour leurs qualités en terme d’innovation, de maturité, d’esthétique, d’intérêt général.
+            .col-md-6: p Une journée d’exposition à l’Institut Français de la Mode, des projets, créateurs et startups FashionTech émergents sélectionnés pour leurs qualités en terme d’innovation, de maturité, d’esthétique, d’intérêt général.
               p Les équipes gagnantes du FTChallenge y exposeront également leurs créations.
               p Rendez-vous culturel et interactif, terrain d’échange et de rencontre privilégié des amateurs et professionnels de la mode et du numérique, la FashionTech Expo rassemble les curieux des évolutions de la mode. Cette rencontre vise à révéler et encourager la construction d’une mode du progrès connectée aux enjeux actuels.
 
           .row.event
-            .col-sm-6
+            .col-md-6
               strong.time 19h00 - 22h30
               h4.name Cocktail de cloture
               a.btn.inscript(href='https://www.eventbrite.com/e/fashiontech-expo-paris-tickets-27026508013' target="_blank") Inscription
               a.page-scroll.location(href='#cd-google-map') à l'Institut Français de la Mode
-            .col-sm-6: p.desc La FashionTech Week se termine par un cocktail de clôture festif mis en place par tous les partenaires de la Fashion-Tech Week à l’Institut Français de la Mode dans la continuité de la FashionTech Expo.
+            .col-md-6: p La FashionTech Week se termine par un cocktail de clôture festif mis en place par tous les partenaires de la Fashion-Tech Week à l’Institut Français de la Mode dans la continuité de la FashionTech Expo.
               p: ul <h3>Programme</h3>
                 li  <strong style="font-weight: bold;">19h00</strong> le mot de notre parrain et annonce du prix du public
                 li  <strong style="font-weight: bold;">20h00</strong> Vidéo Mapping performance avec Kaleidos
@@ -224,16 +231,16 @@ html(lang='en')
         .coorg
           .col
             .img: a(href="https://numa.paris/"): img.iconity(src="images/logo_numa.png", alt="partner")
-            p.desc Acteur majeur de l’écosystème numérique depuis 14 ans, NUMA fédère inventeurs, entrepreneurs et créateurs pour accélérer et faire rayonner l’innovation. Présent à Paris, Moscou et Bengalore, NUMA s'organise autour de trois missions :
-            ul
+            p.no-bottom-margin Acteur majeur de l’écosystème numérique depuis 14 ans, NUMA fédère inventeurs, entrepreneurs et créateurs pour accélérer et faire rayonner l’innovation. Présent à Paris, Moscou et Bengalore, NUMA s'organise autour de trois missions :
+            ul.no-left-margin
               li La structuration des communautés par l'événementiel (1500 evenements en 2015 réunissant 80 000 personnes)
               li L'accélération de startups (72 startups accélérées depuis 2011, 60 M€ de levée de fonds, 50 M€ d'exit)
               li La transformation numérique des entreprises (1/3 du CAC 40 accompagné, + 50% de croissance / an)
           .col
-            .img: a(href="http://www.hallcouture.com/"): img.iconity(src="images/logo_hallcouture.png", alt="partner")
-            p.desc Espace de travail partagé dédié à la Mode française innovante.
-            p.desc Hall Couture combine les services Atelier de fabrication associant machines à commande numériques et machines traditionnelles
-            ul
+            .img: a(href="http://www.hallcouture.com/"): img.hallc(src="images/logo_hallcouture.png", alt="partner")
+            p Espace de travail partagé dédié à la Mode française innovante.
+            p Hall Couture combine les services Atelier de fabrication associant machines à commande numériques et machines traditionnelles
+            ul.no-left-margin
               li Espace de coworking, de formation et d’échange ;
               li Espace physique  de présentation, de vente et de location des créations internes ;
               li Accueil d’activités de Recherche, à commencer par les projets du TEXTILab.
@@ -253,11 +260,11 @@ html(lang='en')
             .img: a(href="https://inhope.com/"): img.iconity(src="images/logo_inhope.png", alt="partner")
             p IN-HOPE (R&amp;D Lab): By questioning how we use light in the context of climate change and light polalution, IN-HOPE creates new indoor and outdoor lighting aesthetics through the development of luminous fabrics, wearable tech and IOT lighting objects.
           .col
-            .img: a(href="http://federationfashiontech.com/"): img.iconity(src="images/logo_lafashiontech.png", alt="partner")
-            p.desc La fashiontech est une association fondée par les acteurs du développement d’un secteur mode et textile exploratoire, innovant, créatif et responsable qui se veut en phase avec notre aire et ses enjeux.
+            .img: a(href="http://federationfashiontech.com/"): img.lafashiontech(src="images/logo_lafashiontech.png", alt="partner")
+            p La fashiontech est une association fondée par les acteurs du développement d’un secteur mode et textile exploratoire, innovant, créatif et responsable qui se veut en phase avec notre aire et ses enjeux.
             p Son objet est en France et dans tous les pays étrangers : de fédérer, d’animer, promouvoir et développer le Réseau d’entreprises et d’acteurs alliant innovations technologiques, sociales et durables et dont les activités sont liées au textile, au design interactif  et à la mode.
           .col
-            .img: a(href="https://www.lafabrique-ecole.fr/"): img.iconity(src="images/logo_lafabrique.png", alt="partner")
+            .img: a(href="https://www.lafabrique-ecole.fr/"): img.lafabrique(src="images/logo_lafabrique.png", alt="partner")
             p Mode et décoration sont au cœur de la nouvelle école de la cci paris idf. L’ambition de La Fabrique est d’être un lieu de brassage, d’inventions et d’innovations constantes destiné à ré-inventer l’excellence française des savoir-faire techniques de la mode et de la décoration.
           .col
             .img: a(href="http://hallcouture.com/studiotech-innovative-fashion-productions-and-services/"): img.iconity(src="images/logo_studiotech.jpg", alt="partner")
@@ -291,7 +298,7 @@ html(lang='en')
             li: a(href="http://www.ifm-paris.com/" name="ifm" target="_blank"): img.ifm(src="images/logo_ifm.jpg", alt="ifm")
             li: a(href="http://www.adaweek.fr/" name="adaweek" target="_blank"): img.adaweek(src="images/logo_adaweek.jpg", alt="adaweek")
             li: a(href="http://www.makery.info/" name="makery" target="_blank"): img.makery(src="images/logo_makery.png", alt="makery")
-            li: a(href="http://volumesparis.org/" name="volumes" target="_blank"): img.numa(src="images/logo_volumes.png", alt="volumes")
+            li: a(href="http://volumesparis.org/" name="volumes" target="_blank"): img.volumes(src="images/logo_volumes.png", alt="volumes")
             li: a(href="http://www.bigbooster.org/" name="bigbooster" target="_blank"): img.bigbooster(src="images/logo_bb.png", alt="bigbooster")
 
 
@@ -319,7 +326,7 @@ html(lang='en')
 
     footer
       .container.text-center
-        p Copyright &copy; <a href="http://www.numa.paris" name="numa Paris" target="_blank">NUMA</a> Fashion Tech Week 2015
+        p Copyright &copy; <a href="http://www.numa.paris" name="numa Paris" target="_blank">NUMA</a> / <a href="http://hallcouture.com/studiotech-innovative-fashion-productions-and-services/">Studiotech</a> Fashion Tech Week 2015
 
     script(src='assets/jquery/jquery.js')
     script(src='assets/jquery/jquery.easing.min.js')

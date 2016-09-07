@@ -52,9 +52,7 @@ h6 {
     // font-family: 'simplon_bp_regularregular';
 }
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    list-style-type: disclosure-closed;
 }
 p, ul {
     margin: 0 0 25px;
@@ -195,14 +193,14 @@ p, ul {
     font-size: 1.2em;
     text-decoration: none;
     display: inline-block;
-    margin-bottom: 5px;
+    margin: 5px 15px 10px 0px;
 }
 
 
 
 // Hacking the program n stuff.
 
-#program {
+#program-content {
     #gradient>.vertical(@pink, @pale);
     .container {
         // background: white;
@@ -226,24 +224,20 @@ p, ul {
 }
 
 .day {
-    > h3 { font-size: 3em; }
+    > h3 { font-size: 2.4em; }
 }
 strong.time {
-    font-size: 2em;
+    font-size: 1.7em;
     color: @black;
 }
 h4.name {
-    font-size: 1.6em;
+    font-size: 2.5em;
     // padding-bottom: 1em;
     // margin: 0px;
     // padding: 0px;
     color: @blue;
 }
 
-.desc {
-    &, a { color: @black; }
-    @media screen and (min-width:@screen-sm) { margin:0; }
-}
 .location {
     color: black;
     display: block;
@@ -325,6 +319,7 @@ ul.partners {
         li {width: 16%;}
     }
     li {
+        text-align: center;
         display: inline-block;
         width: 200px;
         list-style-type: none;
@@ -361,7 +356,10 @@ ul.partners {
             &.uplift         {width: 90px;}
             &.lafabrique     {width: 90px;}
             &.modelab        {width: 120px;}
-
+            &.adaweek        {width: 120px;}
+            &.makery         {width: 160px;}
+            &.volumes        {width: 140px;}
+            &.bigbooster     {width: 100px;}
         }
         &:hover img {
         .saturate;
@@ -379,7 +377,7 @@ ul.partners {
     }
 }
 section {
-    padding: 60px 0;
+    padding: 20px 0;
 }
 
 .download-section {
@@ -531,6 +529,20 @@ img::-moz-selection {
 //     text-align: center;
 //   }
 // }
+
+.no-bottom-margin {
+    margin-bottom: 0px;
+}
+
+.coorg {
+  ul {
+    padding-left: 15px;
+  }
+  .hallc, .lafashiontech, .lafabrique {
+    width: 120px;
+  }
+}
+
 
 .fbx {
     display: block;
